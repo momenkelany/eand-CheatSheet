@@ -27,13 +27,19 @@ This repository contains all **UI components, pages, hooks, contexts, and utilit
 
 ---
 
-## 🧩 Project Overview
-
-This directory holds the **client application** for the e& CheatSheet website, built with a lightweight and modular component architecture.
-
 Everything lives inside `src/`, including:
 
 - Reusable UI primitives  
+
+Social preview image
+--------------------
+
+To ensure link previews in SMS/messaging apps show an icon and image, place a PNG at `client/public/social-preview.png` and commit it.
+- Recommended size: 1200x630 (PNG or JPEG)
+- Filename: `social-preview.png`
+- After adding the image, run `npm run build && npm run deploy` to update the GitHub Pages site.
+
+If you don't want to add an image to the repo, set `og:image` meta tags to point to an externally hosted PNG (HTTPS).
 - Global contexts  
 - Custom hooks  
 - Pages for each site section  
