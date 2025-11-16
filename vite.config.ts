@@ -19,7 +19,8 @@ export default defineConfig({
         ]
       : []),
   ],
-  base:"/eand-CheatSheet",
+  // Make sure trailing slash is present so Vite generates asset paths correctly
+  base: "/eand-CheatSheet/",
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
