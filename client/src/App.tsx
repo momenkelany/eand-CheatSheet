@@ -8,8 +8,11 @@ import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
 
 function Router() {
+  const baseEnv: string = (import.meta.env.BASE_URL as string) || "/";
+  // wouter expects the base without a trailing slash (e.g. '/eand-CheatSheet')
+  const base = baseEnv === "/" ? "/" : baseEnv.replace(/\/$/, "");
   return (
-    <WouterRouter base={import.meta.env.BASE_URL || '/'}>
+    <WouterRouter base={base}>
       <Switch>
       <Route path="/" component={Home} />
       <Route component={NotFound} />
