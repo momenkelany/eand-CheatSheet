@@ -57,129 +57,105 @@ export const details: string[] = [
 type Topic = { title: string; content: string[] };
 export const topics: Topic[] = [
   {
-    title: "NBA Pitching",
-    content: [
-      "1- Pich/ Open: -",
-      "- TS/ problem solved",
-      "- Any scenario that doesn't include an issue",
-      "2- Open/ Don't pich: -",
-      "- Angry CST",
-      "- Open or long-opened complaints",
-      "3- Don't open/ Don't pitch:-",
-      "- Outage",
-      "- Wrong IVR> Transfer",
-      "- Out of Scope \"Social media apps\" / \"Consumer\"",
-      "- Suspended Accounts",
-      "- Call about document issue",
-      "- Open request \"open SR\"",
-      "- Expired LOA"
-    ]
+    title: "Esclation / Angry Customer",
+    content: []
+    // content: [
+    //   "1- Pich/ Open: -",
+    //   "- TS/ problem solved",
+    //   "- Any scenario that doesn't include an issue",
+    //   "2- Open/ Don't pich: -",
+    //   "- Angry CST",
+    //   "- Open or long-opened complaints",
+    //   "3- Don't open/ Don't pitch:-",
+    //   "- Outage",
+    //   "- Wrong IVR> Transfer",
+    //   "- Out of Scope \"Social media apps\" / \"Consumer\"",
+    //   "- Suspended Accounts",
+    //   "- Call about document issue",
+    //   "- Open request \"open SR\"",
+    //   "- Expired LOA"
+    // ]
   },
   {
     title: "Verification Process",
-    content: [
-      "Soft verification: -",
-      "Company name (At least one name of the company)",
-      "*We don't need to verify the CST for tech troubleshooting",
-      "*We don't need to verify the CST if the CST is following up with a reference number",
-      "Hard verification: -",
-      "1- If the cst has an active/approved LOA: -",
-      "*If the CST is calling from the authorized number = no verification is required",
-      "A- If the CST is calling from the same party ID:",
-      "for any general info: The company name is enough",
-      "for any account modification: varication through OTP \"Only\"",
-      "B- If the CST is calling from a different party ID:",
-      "for any general info: Company name + OTP",
-      "* In case LOA is not available for the OTP: provide 1- trade license number/ expiry date 2- establishment number/ expiry date",
-      "*If the expiry date is old on CIM, accept any future expiry date",
-      "for any account modification: Company name + OTP. Don't accept trade licenses or establishment details",
-      "C- If the CST is called from the same phone number: -",
-      "Company name for general info and account modification (add or delete add-ons) \"Except for block selfcare\"",
-      "2- If the CST has a No Active/Approved LOA: -",
-      "A- Same party ID:",
-      "For any general info: Company name",
-      "For any account modification: Update LOA",
-      "B- Different Party ID",
-      "For any general info: Company name + Manual Verification",
-      "For any account modification: Update LOA",
-      "C- IF the CST is calling from the same number",
-      "For any general info: Company name",
-      "For account modification except adding or deleting add-ons: CST must update the Documents"
-    ]
+    content: []
+    // content: [
+    //   "Soft verification: -",
+    //   "Company name (At least one name of the company)",
+    //   "*We don't need to verify the CST for tech troubleshooting",
+    //   "*We don't need to verify the CST if the CST is following up with a reference number",
+    //   "Hard verification: -",
+    //   "1- If the cst has an active/approved LOA: -",
+    //   "*If the CST is calling from the authorized number = no verification is required",
+    //   "A- If the CST is calling from the same party ID:",
+    //   "for any general info: The company name is enough",
+    //   "for any account modification: varication through OTP \"Only\"",
+    //   "B- If the CST is calling from a different party ID:",
+    //   "for any general info: Company name + OTP",
+    //   "* In case LOA is not available for the OTP: provide 1- trade license number/ expiry date 2- establishment number/ expiry date",
+    //   "*If the expiry date is old on CIM, accept any future expiry date",
+    //   "for any account modification: Company name + OTP. Don't accept trade licenses or establishment details",
+    //   "C- If the CST is called from the same phone number: -",
+    //   "Company name for general info and account modification (add or delete add-ons) \"Except for block selfcare\"",
+    //   "2- If the CST has a No Active/Approved LOA: -",
+    //   "A- Same party ID:",
+    //   "For any general info: Company name",
+    //   "For any account modification: Update LOA",
+    //   "B- Different Party ID",
+    //   "For any general info: Company name + Manual Verification",
+    //   "For any account modification: Update LOA",
+    //   "C- IF the CST is calling from the same number",
+    //   "For any general info: Company name",
+    //   "For account modification except adding or deleting add-ons: CST must update the Documents"
+    // ]
   },
   {
-    title: "Shadow Access Tool",
-    content: [
-      "- To use B2B Admin/Shadow Access tool:",
-      "  1- From the main menu choose Corporate Management> Select Corporate Account: *write down the service number",
-      "  2- From Management List> Select Get Customer View",
-      "",
-      "- To get the user's credential/license:",
-      "  1- From the main menu choose Corporate Management> Select Corporate Account: *write down service number",
-      "  2- From Management List> Select Get Customer View",
-      "  3- Search in the portal using the account number> Service Details> Voice User Lines (Manage)",
-      "* When you have an email: Search user ID",
-      "",
-      "- To see user's cameras:",
-      "  1- From the main menu choose Corporate Management> Select Corporate Account: *write down service number",
-      "  2- From Management List> Select Get Customer View",
-      "  3- Services> Fixed Services> Video Surveillance> Manage> View & Manage Camera> Select Video Surveillance ID"
-    ]
+    title: "Dunning Account",
+    content: []
+    // content: [
+    //   "- To use B2B Admin/Shadow Access tool:",
+    //   "  1- From the main menu choose Corporate Management> Select Corporate Account: *write down the service number",
+    //   "  2- From Management List> Select Get Customer View",
+    //   "",
+    //   "- To get the user's credential/license:",
+    //   "  1- From the main menu choose Corporate Management> Select Corporate Account: *write down service number",
+    //   "  2- From Management List> Select Get Customer View",
+    //   "  3- Search in the portal using the account number> Service Details> Voice User Lines (Manage)",
+    //   "* When you have an email: Search user ID",
+    //   "",
+    //   "- To see user's cameras:",
+    //   "  1- From the main menu choose Corporate Management> Select Corporate Account: *write down service number",
+    //   "  2- From Management List> Select Get Customer View",
+    //   "  3- Services> Fixed Services> Video Surveillance> Manage> View & Manage Camera> Select Video Surveillance ID"
+    // ]
   },
   {
-    title: "Third Party Services",
-    content: [
-      "*If the service is not under the Wayak: Usage> Content Usage Details",
-      "CIM Smart flow: Billing complaint/ Troubleshooting> Billing dispute/Extra charges> Rental Issues> Third Party service charges",
-      "   *To check if the CST has a previous refund: Billing> Adjustment and Transfers> Adjustment detailed History (search in the past three months)",
-      "   * Max refund period is 3 months, max refund limit for agent 200, leader 500. for a refund of more than 200, generate a waiver 'from the info hub article'",
-      "   *From CODE TOOL: Collection> Adjustment> Create"
-    ]
-  },
-  {
-    title: "Domain System Navigation",
-    content: [
-      "From the search bar: use the domain name> check the package name such as ADSL - Business One and open the account number",
-      "1-to check if the virtual mail is stand alone or not: Profile> Linked accounts (in no records was found = stand-alone)",
-      "2-to check if the web hosting belongs to us or not: Web Based> Domain Details ( the primary server name + check domain name = if it doesn't belong to Etisalat direct the cst to his web hosting)",
-      "*To know the account number for webhosting: CBCM Tool> Favorite> Account inquiry> Search using the Domain account number or the domain name (such as 621109079 or chowking) then search> From Party Full Name click the company name",
-      "find the internet username (yhdicec) then use it in the search bar in CIM",
-      "*If there's no Internet username and you to know if the hosting belongs to us or not: from Related Links> Select Domain Details chowking.ae",
-      "To know the main web hosting account: Profile> Party> Customer Account> from Linked Accounts tap look for (Active) Shared Web Hosting (Use the linked account number and search in eNRM Tool)",
-      "in eNRM> IView> Search Customer Details (search using the linked account number you have)> and use the account number next to (SHARED WEB HOSTING - MY WEB PACKAGE)"
-    ]
-  },
-  {
-    title: "Checking LOA Request",
-    content: [
-      "Open BCRM Tool: Reports> Sales> Authorization Requests> *Use the search bar",
-      "-To Check Party ID:",
-      "From the LOA request opened, click the company name link> Parties"
-    ]
-  },
-  {
-    title: "Device Care Tool",
-    content: [
-      "- Apps/Web> e& Business Portal (For Portal)",
-      "- Apps/Web> e& Business UAE App (For App)",
-      "-For ONT configuration steps:",
-      "Select ADSL> Select ONT Brand> Select ONT Model> Choose your steps from Configurations"
-    ]
+    title: "Third Party Services Cancellation",
+    content: []
+    // content: [
+    //   "*If the service is not under the Wayak: Usage> Content Usage Details",
+    //   "CIM Smart flow: Billing complaint/ Troubleshooting> Billing dispute/Extra charges> Rental Issues> Third Party service charges",
+    //   "   *To check if the CST has a previous refund: Billing> Adjustment and Transfers> Adjustment detailed History (search in the past three months)",
+    //   "   * Max refund period is 3 months, max refund limit for agent 200, leader 500. for a refund of more than 200, generate a waiver 'from the info hub article'",
+    //   "   *From CODE TOOL: Collection> Adjustment> Create"
+    // ]
   },
   {
     title: "Checking unauthorized number (UAE owner)",
-    content: [
-      "CBCM Tool> Favorite> Account inquiry> Search using Account Number"
-    ]
+   content: [] 
+  //  content: [
+  //     "CBCM Tool> Favorite> Account inquiry> Search using Account Number"
+  //   ]
   },
   {
     title: "Documents Issue, cst can't log in because EID linked to another company (Smart CIM Flow)",
-    content: [
-      "Complaint> Profiling and LOA related> Caller is not the same person in the Authorized contact/s list> Unable to Login /Renew Documents/ enroll new authorized access> Login Error: EID Registered with other PID",
-      "Search the profile in BCRM using Emirates ID Open BCRM, Click on the filter tab on the left side> Choose \"Contacts\" from the drop-down menu, choose \"Emirates ID\" from the other drop-down menu, and search the Emirates ID number. Then click on \"Results\"",
-      "If it's linked follow another flow based on CST inputs",
-      "*1*If cst wants to link: Complaint> VAS Complaint> B2B Issues> Link Party ID> Educate customer to follow new Registration Flow on e& Business Portal (( Device care steps: Self-registration via UAE PASS thru B2B Portal)> follow the rest as per cst inputs"
-    ]
+    content: []
+    // content: [
+    //   "Complaint> Profiling and LOA related> Caller is not the same person in the Authorized contact/s list> Unable to Login /Renew Documents/ enroll new authorized access> Login Error: EID Registered with other PID",
+    //   "Search the profile in BCRM using Emirates ID Open BCRM, Click on the filter tab on the left side> Choose \"Contacts\" from the drop-down menu, choose \"Emirates ID\" from the other drop-down menu, and search the Emirates ID number. Then click on \"Results\"",
+    //   "If it's linked follow another flow based on CST inputs",
+    //   "*1*If cst wants to link: Complaint> VAS Complaint> B2B Issues> Link Party ID> Educate customer to follow new Registration Flow on e& Business Portal (( Device care steps: Self-registration via UAE PASS thru B2B Portal)> follow the rest as per cst inputs"
+    // ]
   }
 ];
 
@@ -266,6 +242,7 @@ export const scenarios: Scenario[] = [
   {
     title: "🔄 Pay Bill for Bad Debt with Account ID through website",
     content: [
+      "Test!!!!",
       "Step 1: Get Account Id ",
       ` <a href=\"https://outage.example.corp/\" target=\"_blank\">Go to e& website</a>`
     ]
@@ -273,6 +250,7 @@ export const scenarios: Scenario[] = [
   {
     title: "🧾 Billing Dispute Scenario",
     content: [
+      "Test!!!!",
       "Step 1: Verify invoice & charge history",
       ` <a href=\"https://billing.example.corp/\" target=\"_blank\">Billing Tool</a>`
     ]
@@ -280,6 +258,7 @@ export const scenarios: Scenario[] = [
   {
     title: "🔧 Device Replacement Scenario",
     content: [
+      "Test!!!!",
       "Step 1: Check device warranty & order a replacement",
       ` <a href=\"https://devices.example.corp/\" target=\"_blank\">Device Portal</a>`
     ]

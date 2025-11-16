@@ -6,24 +6,11 @@ import { useState, useRef, useEffect } from "react";
 export default function Header() {
   const { theme, toggleTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const mobileLastTapRef = useRef<number | null>(null);
   const headerRef = useRef<HTMLElement | null>(null);
 
   const handleMobileToggle = () => {
-    const now = Date.now();
-    if (!mobileMenuOpen) {
-      setMobileMenuOpen(true);
-      mobileLastTapRef.current = now;
-      return;
-    }
-
-    // menu is open: require double-tap to close
-    if (mobileLastTapRef.current && now - mobileLastTapRef.current <= 300) {
-      setMobileMenuOpen(false);
-      mobileLastTapRef.current = null;
-    } else {
-      mobileLastTapRef.current = now;
-    }
+    // Toggle the mobile menu open state on a single click/tap
+    setMobileMenuOpen((open) => !open);
   };
 
   // Keep CSS var --header-offset in sync with the header height so that anchors
