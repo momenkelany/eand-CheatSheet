@@ -43,7 +43,7 @@ export const details: string[] = [
 
 "22- Account Info / B2C : Online ➡ B2C ➡ Personal E-mail, \nUsername (for e& App), \nPrimary Number (in Multi-SIM), \nLinked credit cards",
 
-"23- ❕❕❕❕❕-Paid to ❕❕❕❕❕-Paid : USP ➡ Account Management ➡ Migration (from ??????-Paid to ??????-Paid)",
+"23- ❕❕❕❕❕-Paid to ❕❕❕❕❕-Paid : USP ➡ Account Management ➡ Migration\n(from ??????-Paid to ??????-Paid)",
 
 "24- Technician Visit (Paid Visit 155 AED) : USP ➡ Edit Account ➡ Technician Visit",
 

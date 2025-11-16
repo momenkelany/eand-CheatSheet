@@ -115,8 +115,8 @@
 
 /* Fancy hover for the author name in the Footer */
 .name-hover {
-  --gradient-from: #ff7a18;
-  --gradient-via: #ff0a54;
+  --gradient-from: #FF000D;
+  --gradient-via: #FF000D;
   --gradient-to: #8d3cff;
   display: inline-block;
   transition: transform 220ms cubic-bezier(.2,.9,.2,1), filter 220ms cubic-bezier(.2,.9,.2,1), opacity 200ms ease;
