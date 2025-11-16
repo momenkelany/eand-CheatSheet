@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4">
           <div className="text-center">
             <p className="text-muted-foreground" data-testid="text-footer-attribution">
-              Made by: 
+              Developed by: 
               <span className="text-primary font-semibold ml-1 inline-block">
                 <a
                   target="_blank"
