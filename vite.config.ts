@@ -19,8 +19,8 @@ export default defineConfig({
         ]
       : []),
   ],
-  // Make sure trailing slash is present so Vite generates asset paths correctly
-  base: "/eand-CheatSheet/",
+  // Use base only in production so dev server serves plain `/src/...` module paths.
+  base: process.env.NODE_ENV === "production" ? "/eand-CheatSheet/" : "/",
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
