@@ -5,7 +5,18 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4">
           <div className="text-center">
             <p className="text-muted-foreground" data-testid="text-footer-attribution">
-              Made by: <span className="text-primary font-semibold"><a target="_blank" href="https://momenkelany.github.io/Momen-Kelany-Portfolio/">Mo'men Kelany</a></span>
+              Made by: 
+              <span className="text-primary font-semibold ml-1 inline-block">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://momenkelany.github.io/Momen-Kelany-Portfolio/"
+                  className="name-hover"
+                  aria-label="Visit Mo'men Kelany portfolio"
+                >
+                  <span className="name-gradient">Mo'men Kelany</span>
+                </a>
+              </span>
             </p>
           </div>
 

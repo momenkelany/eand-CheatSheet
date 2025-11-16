@@ -113,6 +113,32 @@
   --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
 }
 
+/* Fancy hover for the author name in the Footer */
+.name-hover {
+  --gradient-from: #ff7a18;
+  --gradient-via: #ff0a54;
+  --gradient-to: #8d3cff;
+  display: inline-block;
+  transition: transform 220ms cubic-bezier(.2,.9,.2,1), filter 220ms cubic-bezier(.2,.9,.2,1), opacity 200ms ease;
+  will-change: transform, filter, opacity;
+}
+.name-hover:hover {
+  transform: translateY(-4px);
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.08));
+}
+.name-hover .name-gradient {
+  background-image: linear-gradient(90deg, var(--gradient-from), var(--gradient-via), var(--gradient-to));
+  background-size: 200% 100%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 300ms cubic-bezier(.2,.9,.2,1);
+}
+.name-hover:hover .name-gradient {
+  background-position: 100% 50%;
+}
+
 .dark {
   --button-outline: rgba(255,255,255, .10);
   --badge-outline: rgba(255,255,255, .05);
