@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIM Tree - Knowledge Base</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --bg-dark: #0f172a;
+            --bg-darker: #0a0f1f;
+            --card-bg: #1e293b;
+            --border-color: rgba(168, 85, 247, 0.2);
+            --text-primary: #ffffff;
+            --text-secondary: #cbd5e1;
+            --accent-purple: #a855f7;
+            --accent-pink: #ec4899;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1f35 50%, var(--bg-darker) 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(10px);
+            background: rgba(15, 23, 42, 0.8);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.25rem;
+        }
+
+        .header-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        /* Search Bar */
+        .search-container {
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 1rem 1rem 1rem 2.75rem;
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .search-bar:focus {
+            outline: none;
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+            background: rgba(30, 41, 59, 0.8);
+        }
+
+        .search-bar::placeholder {
+            color: rgba(203, 213, 225, 0.5);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--accent-purple);
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        /* Section Headers */
+        .section-header {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Grid Layouts */
+        .grid {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 4rem;
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        .grid-2 {
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        }
+
+        @media (max-width: 768px) {
+            .grid-3,
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Card Styles */
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.75rem;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.6) 100%);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .card:hover {
+            border-color: var(--accent-purple);
+            box-shadow: 0 20px 40px rgba(168, 85, 247, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .card-title {
+            font-weight: 600;
+            color: var(--accent-purple);
+            font-size: 0.95rem;
+            line-height: 1.4;
+            flex: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card.topic .card-title {
+            color: var(--accent-pink);
+        }
+
+        .chevron {
+            width: 1.25rem;
+            height: 1.25rem;
+            flex-shrink: 0;
+            color: var(--accent-purple);
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card.topic .chevron {
+            color: var(--accent-pink);
+        }
+
+        .card.expanded .chevron {
+            transform: rotate(180deg);
+        }
+
+        .card-body {
+            display: none;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            animation: slideDown 0.3s ease;
+        }
+
+        .card.expanded .card-body {
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-color);
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(10px);
+            margin-top: 4rem;
+            padding: 2rem 1.5rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .footer-text {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .footer-author {
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+
+        .footer-rights {
+            color: rgba(203, 213, 225, 0.6);
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        .footer-version {
+            color: rgba(203, 213, 225, 0.5);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .header-title {
+                font-size: 1.5rem;
+            }
+
+            main {
+                padding: 1.5rem 1rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .card-content {
+                padding: 1rem;
+            }
+        }
+
+        /* Smooth transitions */
+        * {
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-darker);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-purple);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-pink);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div>
+                <h1 class="header-title">CIM Tree Knowledge Base</h1>
+                <p class="header-subtitle">Quick reference guide for system navigation</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <input type="text" id="searchBar" class="search-bar" placeholder="Search details...">
+        </div>
+
+        <!-- Details Section -->
+        <section>
+            <div class="section-header">
+                <h2 class="section-title">📋 System Details</h2>
+                <p class="section-subtitle">Click on any item to expand and view detailed information</p>
+            </div>
+            <div id="detailsGrid" class="grid grid-3"></div>
+        </section>
+
+        <!-- Topics Section -->
+        <section>
+            <div class="section-header">
+                <h2 class="section-title">🎯 Topics to Explore</h2>
+                <p class="section-subtitle">Click on any topic to expand and learn more</p>
+            </div>
+            <div id="topicsGrid" class="grid grid-2"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                Made by: <span class="footer-author">Mo'men Kelany</span>
+                <div class="footer-rights">All rights reserved © 2024</div>
+            </div>
+            <div class="footer-version">CIM Tree Knowledge Base v1.0</div>
+        </div>
+    </footer>
+
+    <script>
+        // Data
+        const details = [
+            "1- LOA Details: Profile> Party> LOA Details",
+            "2- Virtual Account: Fixed> Internet Bundle",
+            "3- Domain Name: Web Based> Mail Box",
+            "4- Domain Number: Profile> Account> Linked Accounts *Account Number",
+            "5- IP Number Activation: Profile> Accounts> Voice Line Details",
+            "6- KAM: Profile> Party> Current> Party Information/Party Authorized Contacts",
+            "7- To reset Internet password: Q-Orders> Rest Password> Fill the Request Notes/ Fill the Manual Admin Contact> Action Charges> Free of Charge> Submit *internet username: Account information",
+            "8- To check contract validation: Profile> Account> Contract History",
+            "9- To check if LOA mail has lead and active: use the LOA mail - Online> B2B> expand to 50 and check for Lead/Active",
+            "10- To know the previous history of a number: Account information> Account suffix> search using account id",
+            "11- To know ceased account old bundle: Profile> Account> Deactivated",
+            "12- Checking the bill and downloading the bill: Billing> Billing & Charges> III Options> Download",
+            "13- To send the bill: Billing> Billing & Charges> III Options> send bill",
+            "14- To check add-ons added: Profile> Account> Chargable",
+            "15- For payment details: Billing> payment details",
+            "16- To know the main number of a virtual number: fixed> internet bundle and internet line details",
+            "17- To check username for toll-free number: fixed> toll-free number inquiry",
+            "18- To check termination number: fixed> toll-free number inquiry",
+            "19- internet username: Account information",
+            "20- To know package details: profile> Account> Account services",
+            "21- To know package contract expiry: profile> account> history> contract history",
+            "22- To know types of devices of the package: profile> account> assets",
+            "23- To user using domain account number/domain name.ae: Profile> Account> Linked accounts",
+            "24- ONT serial number: Fixed> Locnet> ONT_Serial",
+            "25- To check trade license and establishment number: profile> party> current> Party Profiles> screen icon",
+            "26- To assure no acceptance placed on renewing the BQS contract: NBA Tool> Reports> Interactions reports",
+            "27- NBA Renewal: Fixed Plans/Broadband> select the same bundle from renewal tab + select devices from 'Fixed Devices'",
+            "28- To check if Active & Gpon working number: From the 8 digit icon on the top right of CIM> Etisalat ID> Select search by Account number",
+            "29- To calculate exit charge: Profile> Account> Account services> Exit charge> exit charge details",
+            "30- Spocs Info: profile > party > current > Party Profiles > screen icon > Party Profile Contacts",
+            "31- eBill Email: Contact information",
+            "32- Smart CIM Service activation: Request > Account Modification > Service Activation",
+            "33- To check if the CST already has an activated service: Interactions > Account > Orders > find 'Change subscription details' request > View",
+            "34- To know the working order/ Booking ID: Interactions > Account > Proactive Complaint",
+            "35- To get the CST usage: Usage > Fixed",
+            "36- To check if the virtual mail is stand-alone or not: Profile > Linked accounts (if no records were found = stand-alone)",
+            "37- To check if the web hosting belongs to us or not: Web Based > Domain Details (check the primary server name + domain name = if it doesn't belong to Etisalat, direct the CST to his web host provider)",
+            "38- To check the scheduled tech visit time frame slot: Interactions > Complaints > View the complaint > WFM tab",
+            "39- To make a UCMS request if the CST is frustrated and insists on a tech visit: Complaint > Request > Impacted service 'uSMB Escalation Desk' > Complaint type 'Follow Up on existing UCMS'",
+            "40- To search an MTID number: from the 8-digits icon > Outage",
+            "41- To make a lead from NBA: NBA > Actions > Create Lead > Fill the details and in Channel select 'Inbound'",
+            "42- To create a supervisor request: Complaint > Request > Select Impacted service 'Business care SUP' > Select complaint type 'EGS Sup Support'",
+            "43- To check mobile package benefits and consumptions: Mobile> Network> Allocated resource Details",
+            "44- Sim and device serial number: Mobile> Network> SIM Details Card Number / IMSI No",
+            "45- To know the benefits of a rate plan: Profile> Account> Account Services> Rechargeable> Copy the rate plan and search it from 'Confluence in InfoHub'",
+            "46- To know the benefits: Profile> Account> Account services> Freebies",
+            "47- If the cst has Virtual Prepaid: 360 View> Show virtual prepaid details",
+            "48- To know if the SIM user has a promotion: Interaction> Account> Channels",
+            "49- To know the payment method the user used: Usage> CRS (DWS)> Provisioning details",
+            "50- Third Party Services: Profile> Account> Account Services> Chargeable> Third Party Services",
+            "52- To check the Usage Charges Limit: 360 View > Usage Limit",
+            "53- To check the 'Change Usage Charges Limit' request: Interactions > Account > Orders > Type of Request: Change Usage Limit",
+            "54- How to check the App Stores Purchase (DCB) Limit (and usage): Mobile > Network > Allocated Resource Details",
+            "55- To check the Previous month's Balance: Profile> Party> Current> Customer Accounts",
+            "56- To know the prorated expense of an add-on: Billing> Billing & charges> Searched accounts> Account Financial Transaction Details History",
+            "57- To add-ons from CBCM Tool: Favorite> Capture Customer Request> 'Request info' -Sub request type> Add Service -Account number 'Offerings' > Rate Plan> add the Rate Plan Code 'Sales Channel' select any channel",
+            "58- To delete add-ons, it's only possible from the CBCM tool: Favorite> Capture Customer Request> 'Request info' -Sub request type> Delete service",
+            "59- To know Wasel Plan: Profile> Account> Account services> One-time charge (copy rate plan from the screen icon and search it in infohub)",
+            "60- To know if the CST has a block of self-care subscription: Profile> Account> Account Services> Free ((Search using the word 'Block'))",
+            "61- To know the web hosting number: Party> Current> Customer Accounts> Search using 'Shared'",
+            "62- To check the account credit limit: Profile > Account> Account details> Dunning Details",
+            "63- To check the roaming preferred operator: Mobile> Network> Details IN HLR> Roaming Details> Roaming Operator",
+            "64- To add roaming add-on through Q-Order: Q-Order> All> search the package name and press 'On'",
+            "65- To know if the cst has app // Mobile operating system: Online> Account> B2B> SMB APP Last Login Details",
+            "66- To know the IMEI: Mobile> Network> SIM Details> IMEI",
+            "67- To know the package expiry date: Profile> Account> Account services> Expiry date",
+            "68- To know the customer balance: Profile> Party> Current> Customer Accounts",
+            "69- To check the customer contact information: Profile> Party> Current> Contact information",
+            "70- To check the customer email: Profile> Party> Current> Email",
+            "71- To check the customer phone number: Profile> Party> Current> Phone number",
+            "72- To check the customer address: Profile> Party> Current> Address",
+            "73- To check the customer identification: Profile> Party> Current> Identification",
+            "74- To check the customer nationality: Profile> Party> Current> Nationality",
+            "75- To check the customer date of birth: Profile> Party> Current> Date of birth",
+            "76- To check the customer gender: Profile> Party> Current> Gender",
+            "77- To check the customer marital status: Profile> Party> Current> Marital status",
+            "78- To check the customer occupation: Profile> Party> Current> Occupation",
+            "79- To check the customer preferences: Profile> Party> Current> Preferences"
+        ];
+
+        const topics = [
+            "Account Management",
+            "Billing and Payments",
+            "Service Activation",
+            "Technical Support",
+            "Customer Information",
+            "Contract Management",
+            "Package Management",
+            "Device Management",
+            "Network Services",
+            "Internet Services",
+            "Mobile Services",
+            "Fixed Line Services",
+            "Virtual Services",
+            "Domain Services",
+            "Web Hosting",
+            "Email Services",
+            "Security Services",
+            "Roaming Services",
+            "Prepaid Services",
+            "Postpaid Services",
+            "Bundle Services",
+            "Add-on Services",
+            "Premium Services",
+            "Enterprise Services",
+            "B2B Services",
+            "B2C Services",
+            "Self-Care Portal",
+            "Customer Portal",
+            "Agent Portal",
+            "Admin Portal",
+            "Reporting Tools",
+            "Analytics Tools",
+            "Complaint Management",
+            "Order Management",
+            "Interaction Management",
+            "Request Management",
+            "Approval Workflow",
+            "Escalation Process",
+            "Quality Assurance",
+            "Customer Satisfaction",
+            "Service Level Agreement",
+            "Performance Metrics",
+            "System Integration",
+            "API Management",
+            "Data Security",
+            "Privacy Management",
+            "Compliance Management",
+            "Risk Management",
+            "Audit Management",
+            "Change Management",
+            "Incident Management",
+            "Problem Management",
+            "Knowledge Management",
+            "Training Programs",
+            "Documentation",
+            "Best Practices",
+            "Standard Operating Procedures",
+            "Guidelines and Policies",
+            "Terms and Conditions",
+            "Service Policies",
+            "Refund Policies",
+            "Cancellation Policies",
+            "Renewal Policies",
+            "Upgrade Policies",
+            "Downgrade Policies",
+            "Suspension Policies",
+            "Termination Policies",
+            "Dispute Resolution",
+            "Feedback Management",
+            "Suggestion Box",
+            "Customer Reviews",
+            "Rating System",
+            "Loyalty Programs",
+            "Rewards Programs",
+            "Referral Programs",
+            "Promotional Offers",
+            "Seasonal Campaigns",
+            "Marketing Initiatives",
+            "Brand Management",
+            "Corporate Social Responsibility",
+            "Environmental Initiatives",
+            "Community Engagement",
+            "Partnership Programs",
+            "Vendor Management",
+            "Supplier Management",
+            "Resource Planning",
+            "Budget Management",
+            "Cost Optimization",
+            "Revenue Management",
+            "Profitability Analysis",
+            "Market Analysis",
+            "Competitive Analysis",
+            "Strategic Planning",
+            "Business Development",
+            "Innovation Management",
+            "Technology Roadmap",
+            "Digital Transformation",
+            "Cloud Services",
+            "Infrastructure Management"
+        ];
+
+        // DOM Elements
+        const searchBar = document.getElementById('searchBar');
+        const detailsGrid = document.getElementById('detailsGrid');
+        const topicsGrid = document.getElementById('topicsGrid');
+
+        // Render Details
+        function renderDetails(filter = '') {
+            detailsGrid.innerHTML = '';
+            const filtered = details.filter(detail =>
+                detail.toLowerCase().includes(filter.toLowerCase())
+            );
+
+            if (filtered.length === 0) {
+                detailsGrid.innerHTML = '<div class="empty-state" style="grid-column: 1/-1;">No details found matching your search</div>';
+                return;
+            }
+
+            filtered.forEach((detail, index) => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-title">${detail.split(':')[0]}</div>
+                            <div class="chevron">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width: 100%; height: 100%;">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-body">${detail}</div>
+                    </div>
+                `;
+                card.addEventListener('click', () => card.classList.toggle('expanded'));
+                detailsGrid.appendChild(card);
+            });
+        }
+
+        // Render Topics
+        function renderTopics() {
+            topicsGrid.innerHTML = '';
+            topics.forEach(topic => {
+                const card = document.createElement('div');
+                card.className = 'card topic';
+                card.innerHTML = `
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-title">${topic}</div>
+                            <div class="chevron">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width: 100%; height: 100%;">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-body">${topic}</div>
+                    </div>
+                `;
+                card.addEventListener('click', () => card.classList.toggle('expanded'));
+                topicsGrid.appendChild(card);
+            });
+        }
+
+        // Event Listeners
+        searchBar.addEventListener('input', (e) => {
+            renderDetails(e.target.value);
+        });
+
+        // Initial Render
+        renderDetails();
+        renderTopics();
+    </script>
+</body>
+</html>
