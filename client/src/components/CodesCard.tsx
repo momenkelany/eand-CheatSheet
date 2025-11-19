@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { useState, useRef } from "react";
 import { Card } from "./ui/card";
+import Nl2Br from "./ui/nl2br";
 
 interface CodesCardProps {
   title: string;
@@ -61,7 +62,7 @@ export default function CodesCard({ title, description }: CodesCardProps) {
             style={{'--link-hover-color': 'hsl(var(--chart-6))'} as React.CSSProperties}
           >
             <div className="text-sm text-muted-foreground leading-relaxed">
-              {description}
+              <Nl2Br>{description}</Nl2Br>
             </div>
           </div>
         )}
