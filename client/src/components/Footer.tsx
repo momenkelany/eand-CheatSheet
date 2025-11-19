@@ -6,15 +6,17 @@ export default function Footer() {
           <div className="text-center">
             <p className="text-muted-foreground" data-testid="text-footer-attribution">
               Developed by: 
-              <span className="text-primary font-semibold ml-1 inline-block">
+              <span className="ml-1 inline-block">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://momenkelany.github.io/Momen-Kelany-Portfolio/"
-                  className="name-hover"
+                  className="group inline-block transform transition-transform duration-300 hover:-translate-y-1 focus:-translate-y-1"
                   aria-label="Visit Mo'men Kelany portfolio"
                 >
-                  <span className="name-gradient">Mo'men Kelany</span>
+                  <span className="text-primary font-semibold transition-colors duration-300 group-hover:bg-clip-text group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:via-red-500 group-hover:to-indigo-500">
+                    Mo'men Kelany
+                  </span>
                 </a>
               </span>
             </p>
