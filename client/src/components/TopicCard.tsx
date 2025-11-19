@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Card } from "./ui/card";
+import Nl2Br from "./ui/nl2br";
 
 interface TopicCardProps {
   title: string;
@@ -43,7 +44,7 @@ export default function TopicCard({ title, content }: TopicCardProps) {
             <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed">
               {content.map((item, index) => (
                 <li key={index} className="pl-3">
-                  {item}
+                  <Nl2Br>{item}</Nl2Br>
                 </li>
               ))}
             </ul>
