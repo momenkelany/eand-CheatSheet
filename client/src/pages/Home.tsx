@@ -8,6 +8,7 @@ import ScenariosCard from "../components/ScenariosCard";
 import CodesCard from "../components/CodesCard";
 import StartupToolsCard from "../components/StartupToolsCard";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ui/scroll-to-top";
 import { details, topics, articles, startupTools, scenarios, codesNumbers } from "../data/knowledge-base";
 
 export default function Home() {
@@ -282,6 +283,7 @@ export default function Home() {
       </main>
 
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
