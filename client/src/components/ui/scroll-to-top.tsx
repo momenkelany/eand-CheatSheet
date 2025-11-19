@@ -7,12 +7,24 @@ export default function ScrollToTop() {
 
   React.useEffect(() => {
     const onScroll = () => {
-      setVisible(window.scrollY > 200);
+      const scroller = document.scrollingElement || document.documentElement || document.body;
+      const scrollTop = (scroller as any)?.scrollTop ?? window.scrollY ?? 0;
+      const isMobile = window.innerWidth <= 640; // tailwind sm breakpoint
+      const threshold = isMobile ? 100 : 200;
+      setVisible(scrollTop > threshold);
     };
 
     onScroll();
+    // Attach the event to the document's scrolling element when possible, and fallback to window
+    const scroller = document.scrollingElement || document.documentElement || document.body;
+    scroller?.addEventListener('scroll', onScroll);
     window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener('resize', onScroll);
+    return () => {
+      scroller?.removeEventListener('scroll', onScroll);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
   }, []);
 
   const handleClick = () => {
@@ -22,7 +34,7 @@ export default function ScrollToTop() {
   if (!visible) return null;
 
   return (
-    <div className="fixed z-50 right-6 bottom-6">
+    <div className="fixed z-50 right-4 bottom-4 sm:right-6 sm:bottom-6">
       <Button
         variant="ghost"
         size="icon"

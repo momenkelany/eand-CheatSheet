@@ -28,7 +28,7 @@ export default function Footer() {
           <p >
             <span className="text-xs text-destructive">e&</span>{" "}
             <span className="text-xs text-muted-foreground/50">
-              CheatSheet v1.0
+              CheatSheet v1.0.1
             </span>
           </p>
             <p className="text-sm text-muted-foreground/60 mt-1" data-testid="text-footer-copyright">

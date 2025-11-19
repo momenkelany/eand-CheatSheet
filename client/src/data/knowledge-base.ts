@@ -1,5 +1,5 @@
 export const details: string[] = [
-  "1- Plan Type : Left-Panel ➡ Product Information ➡ (Plan Name)\n(Press Enter to get more details)",
+"1- Plan Type : Left-Panel ➡ Product Information ➡ (Plan Name)",
 
 "2- Usage Limit : 360 ➡ Customer profile ➡ Usage limit",
 
@@ -13,149 +13,158 @@ export const details: string[] = [
 
 "7- Document Registration Expiry : Profile ➡ Party ➡ Profile Audit Trail ➡ Registration Expiry",
 
-"8- CRC Notes : Profile ➡ Account ➡ Dunning ➡ CRC Notes (Credit Control Notes)\n(i.e Knows why is the number closed)",
+"8- CRC Notes : Profile ➡ Account ➡ Dunning ➡ CRC Notes (Credit Control Notes)\n(i.e To know the reason of disconnection ex. OutgoingBar (OG) - Toss - Ceased - Home Region",
 
 "9- Amount Due : Profile ➡ Account ➡ Dunning ➡ Amount Due as of now\n(i.e Unbilled Rental)",
 
-"10- VAS : Profile ➡ Account ➡ Subscriptions ➡ VAS + Instalments and All the Other Subscriptions",
+"10- Active Add-ons and Subscriptions (VAS) : Profile ➡ Account ➡ Subscriptions ➡ VAS + Instalments and All the Other Subscriptions",
 
-"11- EID : Billing ➡ Billing and charges ➡ Searched Account ➡ Invoice Billing Address (Customer Address)",
+"11- View Previous Bills : Billing ➡ Billing and Charges ➡ Searched Account",
 
-"12- Proactive Order : Interaction ➡ Account ➡ Proactive order ❓❓❓❓❓",
+"12- Future Dated Request : Interaction ➡ Account ➡ Future Dated Request",
 
-"13- Future Dated Request : Interaction ➡ Account ➡ Future Dated Request",
+"13- Proactive Complaint : Interaction ➡ Account ➡ Proactive Complaint\n(i.e The system created an Proactive Complaint Automatically)\n(ex. when customer has an issue of elife service, to send technician visit for free)",
 
-"14- Proactive Complaint : Interaction ➡ Account ➡ Proactive Complaint\n(i.e Customer Complaint)\n(ex. Customer had a schedule technician visit)",
+"14- Check Installation / Technician Visit / Shifting Appointment Date (Order Followup / Order Status): Interaction ➡ Account ➡ Order ➡ View Sub Orders ➡ View ➡ WFM (Work Force Management)",
 
-"15- Order Followup / Order Status: Interaction ➡ Account ➡ Order ➡ View Sub Orders ➡ View ➡ WFM (Work Force Management)\n(Order subscription and ❓❓❓❓❓)",
+"15- Check elife Installation Address: Interaction ➡ Account ➡ Order ➡ View Sub Orders ➡ View ➡ Installation Address",
 
-"16- Benefits and Remaining of the Plans : Mobile ➡ Network ➡ Allocated Resources ➡ Benefits and remaining of the plan",
+"16- Check Location Home Ready or Not for Installation : Interaction ➡ Account ➡ Order ➡ View Sub Orders ➡ View ➡ EID Details",
 
-"17- Call forwarding Condition / Call Waiting : Mobile ➡ Volte ➡ Call forwarding Condition and Call Waiting (active or not)",
+"17- Benefits and Remaining of the Plans : Mobile ➡ Network ➡ Allocated Resources ➡ Benefits and remaining of the plan",
 
-"18- Country Preferred Number : Mobile ➡ Allocated Resources ➡ Country Name ➡ Preferred Number",
+"18- Call Forwarding / Call Waiting Condition: Mobile ➡ Volte ➡ Call forwarding Condition and Call Waiting (active or not)",
 
 "19- Local Preferred Number : Mobile ➡ Networks in Details ➡ Friends and Family (Local Preferred Number)",
 
 "20- International Preferred Number : Mobile ➡ Networks in Details ➡ Friends and Family : International / Home Country Code (International Preferred Number)",
 
-"21- ❕❕❕❕❕ : Mobile ➡ Network ➡ HLR ➡ Roaming, \nMulti-Sim (Primary and Secondary), \nCall Forwarding, \nCall Barring (i.e Can't Call, the number is locked), \nSMS Incoming Status, \nMulti Party Service (❓❓❓❓❓), \nSim Status, \nHot-Line (i.e When the Customer tries to call he goes to the customer service because he has unbilled amount)",
+"21- Country Preferred Number : Mobile ➡ Allocated Resources ➡ Country Name ➡ Preferred Number",
 
-"22- Account Info / B2C : Online ➡ B2C ➡ Personal E-mail, \nUsername (for e& App), \nPrimary Number (in Multi-SIM), \nLinked credit cards",
+"22- Check Roaming Profile Status (Country and Operator) :  Mobile ➡ Network ➡ HLR ➡ Roaming details, \nMulti-Sim (Primary and Secondary), \nCall Forwarding, \nCall Barring (i.e preventing incoming calls), \nSMS Incoming Status, \nMulti Party Service, \nSMS Incoming Status, \nHot-Line (i.e a service that stop incoming calls and directed the calls to customer service because he has unbilled amount)",
 
-"23- ❕❕❕❕❕-Paid to ❕❕❕❕❕-Paid : USP ➡ Account Management ➡ Migration\n(from ??????-Paid to ??????-Paid)",
+"23- Check App Username and Primary number and email: Online ➡ B2C ➡ Personal E-mail, \nUsername (for e& App), \nPrimary Number (of party ID), \nLinked credit cards",
 
-"24- Technician Visit (Paid Visit 155 AED) : USP ➡ Edit Account ➡ Technician Visit",
+"24- Post-Paid to Pre-Paid : USP ➡ Account Management ➡ Migration\n(from PostPaid to PrePaid) ➡ Select Produce ➡ Prepaid ➡ Wasel",
 
-"25- ❕❕❕❕❕ : USP ➡ Account Management ➡ Edit Account ➡ Home Zone (in search)\n",
+"25- Technician Visit (Paid Visit 157.5 AED VAT included) : USP ➡ Edit Account ➡ Technician Visit",
 
-"26- Add / Delete add-ons for e-Life : USP ➡ Account Management ➡ Edit Account ➡ Add / Delete add-ons for e-Life (ex. Sports+ 39)",
+"26- Additional elife Router : USP ➡ Account Management ➡ Edit Account ➡ Home Zone (in search)",
 
-"27- Technician Visit : USP ➡ Edit Account ➡ Technician Visit ➡ (Smart Living) 157.50 AED (including VAT) Installation Charges (2.4 GHz Only)❓❓❓❓❓"
+"27- Add / Delete add-ons for e-Life : USP ➡ Account Management ➡ Edit Account ➡ Add / Delete add-ons for e-Life (ex. Sports+ 39)",
 ]
 
 type Topic = { title: string; content: string[] };
 export const topics: Topic[] = [
   {
-    title: "Esclation / Angry Customer",
-    content: []
-    // content: [
-    //   "1- Pich/ Open: -",
-    //   "- TS/ problem solved",
-    //   "- Any scenario that doesn't include an issue",
-    //   "2- Open/ Don't pich: -",
-    //   "- Angry CST",
-    //   "- Open or long-opened complaints",
-    //   "3- Don't open/ Don't pitch:-",
-    //   "- Outage",
-    //   "- Wrong IVR> Transfer",
-    //   "- Out of Scope \"Social media apps\" / \"Consumer\"",
-    //   "- Suspended Accounts",
-    //   "- Call about document issue",
-    //   "- Open request \"open SR\"",
-    //   "- Expired LOA"
-    // ]
+    title: "Renew Registration",
+    content: ["Keyword: Renew","How to renew mobile registration using UAE PASS via Mobile app -: PictureGuideTitle"]
+  
   },
   {
-    title: "Verification Process",
-    content: []
-    // content: [
-    //   "Soft verification: -",
-    //   "Company name (At least one name of the company)",
-    //   "*We don't need to verify the CST for tech troubleshooting",
-    //   "*We don't need to verify the CST if the CST is following up with a reference number",
-    //   "Hard verification: -",
-    //   "1- If the cst has an active/approved LOA: -",
-    //   "*If the CST is calling from the authorized number = no verification is required",
-    //   "A- If the CST is calling from the same party ID:",
-    //   "for any general info: The company name is enough",
-    //   "for any account modification: varication through OTP \"Only\"",
-    //   "B- If the CST is calling from a different party ID:",
-    //   "for any general info: Company name + OTP",
-    //   "* In case LOA is not available for the OTP: provide 1- trade license number/ expiry date 2- establishment number/ expiry date",
-    //   "*If the expiry date is old on CIM, accept any future expiry date",
-    //   "for any account modification: Company name + OTP. Don't accept trade licenses or establishment details",
-    //   "C- If the CST is called from the same phone number: -",
-    //   "Company name for general info and account modification (add or delete add-ons) \"Except for block selfcare\"",
-    //   "2- If the CST has a No Active/Approved LOA: -",
-    //   "A- Same party ID:",
-    //   "For any general info: Company name",
-    //   "For any account modification: Update LOA",
-    //   "B- Different Party ID",
-    //   "For any general info: Company name + Manual Verification",
-    //   "For any account modification: Update LOA",
-    //   "C- IF the CST is calling from the same number",
-    //   "For any general info: Company name",
-    //   "For account modification except adding or deleting add-ons: CST must update the Documents"
-    // ]
+    title: "View Bill",
+    content: ["Keyword: pdf","How to View Bill (view PDF) -: PictureGuideTitle"]
+  
   },
   {
-    title: "Dunning Account",
-    content: []
-    // content: [
-    //   "- To use B2B Admin/Shadow Access tool:",
-    //   "  1- From the main menu choose Corporate Management> Select Corporate Account: *write down the service number",
-    //   "  2- From Management List> Select Get Customer View",
-    //   "",
-    //   "- To get the user's credential/license:",
-    //   "  1- From the main menu choose Corporate Management> Select Corporate Account: *write down service number",
-    //   "  2- From Management List> Select Get Customer View",
-    //   "  3- Search in the portal using the account number> Service Details> Voice User Lines (Manage)",
-    //   "* When you have an email: Search user ID",
-    //   "",
-    //   "- To see user's cameras:",
-    //   "  1- From the main menu choose Corporate Management> Select Corporate Account: *write down service number",
-    //   "  2- From Management List> Select Get Customer View",
-    //   "  3- Services> Fixed Services> Video Surveillance> Manage> View & Manage Camera> Select Video Surveillance ID"
-    // ]
+    title: "View Current Plan",
+    content: ["Keyword: benefits", "Know Base Plan Benefits -: PictureGuideTitle"]
+   
   },
   {
-    title: "Third Party Services Cancellation",
-    content: []
-    // content: [
-    //   "*If the service is not under the Wayak: Usage> Content Usage Details",
-    //   "CIM Smart flow: Billing complaint/ Troubleshooting> Billing dispute/Extra charges> Rental Issues> Third Party service charges",
-    //   "   *To check if the CST has a previous refund: Billing> Adjustment and Transfers> Adjustment detailed History (search in the past three months)",
-    //   "   * Max refund period is 3 months, max refund limit for agent 200, leader 500. for a refund of more than 200, generate a waiver 'from the info hub article'",
-    //   "   *From CODE TOOL: Collection> Adjustment> Create"
-    // ]
+    title: "Make Your Own Offer",
+    content: ["Keyword: make your","Make Your Own Offer PictureGuideTitle"]
+   
   },
   {
-    title: "Checking unauthorized number (UAE owner)",
-   content: [] 
-  //  content: [
-  //     "CBCM Tool> Favorite> Account inquiry> Search using Account Number"
-  //   ]
+    title: "Deals for you",
+   content: ["Keyword: deals","Deals for you subscription -: PictureGuideTitIe"] 
   },
   {
-    title: "Documents Issue, cst can't log in because EID linked to another company (Smart CIM Flow)",
-    content: []
-    // content: [
-    //   "Complaint> Profiling and LOA related> Caller is not the same person in the Authorized contact/s list> Unable to Login /Renew Documents/ enroll new authorized access> Login Error: EID Registered with other PID",
-    //   "Search the profile in BCRM using Emirates ID Open BCRM, Click on the filter tab on the left side> Choose \"Contacts\" from the drop-down menu, choose \"Emirates ID\" from the other drop-down menu, and search the Emirates ID number. Then click on \"Results\"",
-    //   "If it's linked follow another flow based on CST inputs",
-    //   "*1*If cst wants to link: Complaint> VAS Complaint> B2B Issues> Link Party ID> Educate customer to follow new Registration Flow on e& Business Portal (( Device care steps: Self-registration via UAE PASS thru B2B Portal)> follow the rest as per cst inputs"
-    // ]
+    title: "Cancel add-on / Third Party Services Subscriptions",
+    content: ["Keyword: cancel any","How to cancel any of your add-ons and Third Party Services subscriptions-; Picture ideTitle"]
+    
+  },
+   {
+    title: "Check and Analyze Usage (calls, SMS and data)",
+    content: ["Keyword:analyze","How to check and analyze usage (calls, SMS and data)—; PictureGUideTitle"]
+  
+  },
+   {
+    title: "Change Usage Limit / Charges",
+    content: ["Keyword:Usage charge","Setting Usage Charges Limit via Mobile app PictureGuideTitle"]
+  
+  },
+   {
+    title: "Change dcb limit / App Store Purchase limit",
+    content: ["Keyword: app store","Setting app store purchase limit using mobile app -: PictureGuideTitle"]
+  
+  },
+  {
+    title: "Decrease Credit Limit",
+    content: ["Keyword:Credit L","Credit Limit via Mobile app -: PictureGuideTitle"]
+  
+  },
+   {
+    title: "Migrate from Prepaid to Postpaid (eligibility auto check)",
+    content: ["Keyword:migrate","How to Migrate from Prepaid to Postpaid (eligibility auto check) PictureGuideTitIe"]
+  
+  },
+   {
+    title: "Migrate from Prepaid to Postpaid (manual upload of documents)",
+    content: ["Keyword:migrate","How to Migrate from Prepaid to Postpaid (manual upload Of documents) PictureGuideT1tle"]
+  
+  },
+   {
+    title: "Apply for eSlM Replacement with UAE Pass",
+    content: ["Keyword:esim replace","How to apply for eSlM Replacement with UAE Pass -: PictureGuideTitle"]
+  
+  },
+   {
+    title: "eSlM replacement",
+    content: ["Keyword:esim replacement","How to do Apple watch eSlM replacement through UAE APP With facial recognition PictureGuideTitle"]
+  
+  },
+  {
+    title: "Transfer Active eSlM from old iPhone to new iPhone",
+    content: ["Keyword:esim from","How to transfer active eSiM from oid 'Phone to new iPhone -: PictureGuideTitle"]
+  
+  },
+   {
+    title: "Change Postpaid Plans (Upgrade - Downgrade - Change Flavor - Migrate)",
+    content: ["Keyword:flavor","How to change Postpaid plans (Upgrade%2C Downgrade%2C Change flavor%2C Migrate) PictureGuideTitle"]
+  
+  },
+   {
+    title: "Change Preferred Country",
+    content: ["Keyword:preferred c","How to manage preferred Country PictureGuideTitle"]
+  
+  },
+   {
+    title: "Change Preferred Number",
+    content: ["Keyword:preferred n","How to manage preferred number included in the plan PictureGuideTitle"]
+  
+  },
+   {
+    title: "Contract Renewal elife",
+    content: ["Keyword:contract r","elife Contract Renewal via mobile app -: PictureGuideTitle"]
+  
+  },
+   {
+    title: "Contact Renewal Postpaid",
+    content: ["Keyword:contract r","Mobile Postpaid Contract Renewal via mobile app -: PictureGuideTitle"]
+  
+  },
+   
+   {
+    title: "Pay in Advance",
+    content: ["Keyword:advance","How to pay in advance via e& UAE mobile app PictureGuideTitle"]
+  
+  },
+   {
+    title: "Check / Update Account Contact Details",
+    content: ["Keyword:update","How to check/update account contact details PictureGuideTitle"]
+  
   }
 ];
 
@@ -168,10 +177,10 @@ export const articles: Article[] = [
     ]
   },
   {
-    title: "📞 CallBack Request",
+    title: "📞 Outbound / Callback Tracker",
     content: [
-      ` <a href="https://infohub.etisalat.corp.ae/StaticResources/shell/workspace?appid=ROOT_KB_READER&autologin=ADFS&app=ArticleDetail&d=SKB_PRODUCTION.TENANT2&code=ART-B319DBD86A" target="_blank" >CallBack Request</a>`
-      , ` <a href="" target="_blank" >Excel Sheet</a>`
+      ` <a href="https://infohub.etisalat.corp.ae/StaticResources/shell/workspace?appid=ROOT_KB_READER&autologin=ADFS&app=ArticleDetail&d=SKB_PRODUCTION.TENANT2&code=ART-B319DBD86A" target="_blank" >Infohub Article: Callback Request - Consumer Elite and Alternate SMB</a>`
+      , ` <a href="<a https://contactcentre.etisalat.corp.ae/main/cc_sections/CompassAnserFlow/AnswerFlowImages/generator/Call%20Back%20Tracker.xlsb</a>" target="_blank" >Excel Sheet</a>`
 
     ]
   },
@@ -316,25 +325,26 @@ export const startupTools: StartupTool[] = [
     ]
   },
   {
+    title: "✅ Outbound / Callback Tracker",
+    content: [
+            ` <a href="https://infohub.etisalat.corp.ae/StaticResources/shell/workspace?appid=ROOT_KB_READER&autologin=ADFS&app=ArticleDetail&d=SKB_PRODUCTION.TENANT2&code=ART-B319DBD86A" target="_blank" >Infohub Article: Callback Request - Consumer Elite and Alternate SMB</a>`
+      , ` <a href="<a https://contactcentre.etisalat.corp.ae/main/cc_sections/CompassAnserFlow/AnswerFlowImages/generator/Call%20Back%20Tracker.xlsb</a>" target="_blank" >Excel Sheet</a>`
+    ]
+  },
+  {
     title: "📞 Motive LandLine",
     content: [
       ` <a href="https://10.183.207.4/csc/startup.do" target="_blank" >Motive LandLine</a>`
     ]
   },
   {
-    title: "🏠 Motive HS (Home Services)",
-    content: [
-      ` <a href="http://10.237.27.3/csc/startup.do" target="_blank" >Motive HS (Home Services)</a>`
-    ]
-  },
-  {
-    title: "📺 DTV",
+    title: "📺 DTV (Packages and Channels)",
     content: [
       ` <a href="https://10.237.227.11:8000/cms/Default.aspx" target="_blank" >DTV</a>`
     ]
   },
   {
-    title: "📍CLA (Customer Locator Application)",
+    title: "📍CLA (Customer Location Application)",
     content: [
       ` <a href="http://egis/customerlocator/logincs.aspx" target="_blank" >CLA (Customer Locator Application)</a>`
     ]
@@ -349,6 +359,12 @@ export const startupTools: StartupTool[] = [
     title: "🔢 CODE (Login)",
     content: [
       ` <a href="https://ssocode.etisalat.corp.ae/code/codeuserLogin.do" target="_blank" >CODE (Login)</a>`
+    ]
+  },
+    {
+    title: "😁 Smiles Portal",
+    content: [
+      ` <a href="https://smiles-api.etisalat.corp.ae/loyaltyadmin/" target="_blank" >Smiles Portal</a>`
     ]
   },
   {
@@ -438,8 +454,7 @@ export const startupTools: StartupTool[] = [
   {
     title: "⚡Quick Escalator",
     content: [
-      ` <a href="https://basher-tech.me/Escaltion.html" target="_blank" >Quick Escalator</a>`
-    ]
+      ` <a href="https://basher-tech.me/Escaltion.html" target="_blank" >Quick Escalator</a>`    ]
   },
   {
     title: "🛠️ Utility Console",
@@ -458,31 +473,44 @@ export const startupTools: StartupTool[] = [
 
 export const codesNumbers: string[] = [
   "AVAYA Survey: 71990",
+  "Directory / Daleel (Local): 181 / AED 1.OO (AED 1.05 VAT)",
   "Business / Not Authorized: 71431",
-  "Prestige AR: 71461",
-  "Prestige EN: 71462",
+  "Prestige / Emirati AR (Business / Not Authorized): 71461",
+  "Prestige / Emirati EN (Business / Not Authorized): 71462",
   "CTSC AR/EN: 3154",
   "Home Move Gold AR: 71037",
   "Home Move Gold EN: 71038",
   "EGS Escalation AR/EN: 12183",
   "Enterprise Customers: 8009111",
-  "SMB: 8005800",
+  "SMB: 8005800 / Free",
   "Huawei Support: 80066600",
-  "Main Menu: 3137",
-  "Cancellation: 8006665",
+  "Main Menu (IVR - AR): 3137",
+  "Main Menu (IVR - EN): 3139",
+  "Cancellation Helpdesk: 8006665 / Free",
+  "Cancellation Arabic: 3582",
+  "Cancellation English: 3583",
+  "Customer Service: 800101",
+  "Fleet Management: 800102",
+  "ED - AR : 3639",
+  "ED - AR : 3640",
+  "e& money: 800-392-5538 / Free",
+  "Fleet Team: 800102 / Free",
+  "e& money: 800-392-5538 / Free",
+  "Appointment Centre: 8007622 / All Days from 08:00 AM to 10:00 PM",
+  "Roaming Care: 9718002300 / Toll free while roaming (prepaid and postpaid)",
+  "Etihad Bureau: 800-287328 / Sunday to Thursday: 08:00 AM to 04:00 PM",
+  "Tel (international): 971800101 / Free",
   "Re-Open Complain (Answer \"No\"): 1661",
   "Balance: *121#",
   "Anti-Spam: DNCR 1012",
   "Play On Demand (Start/Stop): *800#",
   "Usage Limit Increase: *122#",
-  "Customer Service: 800101",
   "Wasel Flexi (6 GB): *101*50#",
-  "Fleet Management: 800102",
-  "Cancellation Arabic: 3582",
-  "Cancellation English: 3583",
   "Allowance: *140#",
   "Collection: 023014650",
   "Every Day 1 GB: *101*3030*2#",
+  "Charge Code (Mobile): 1- 45 | Rental / Exit Charge Refunded (for refund rental & exit charge)\n2- ET | Wasel Refunds (for refund rental prepaid only)\n3- 16 | Usage (additional charge for usage calls & data)\n4- C94 | Roaming (for rental and call usage while roaming)\n5- LB | Roaming (for data usage while roaming)\n6- B6 | Third Party (181 calls - Special numbs - Mparking - greetune - All third party)\n7- 94 | sim cards (for sim card rentals and sin replacements)\n8- 47 | Balance Transfer (for balance transfer transaction)",
+  "Charge Code (Fixed): 1- IU | Installation  (when customer have wrong installation fees)\n2- 45 | Rental / Exit charge (for refund rental & exit charge)\n3- 3 | External shifting (for refund wrong additional charges for shifting)\n4- 2 | Internal shifting (for refund wrong additional charges for shifting)\n5- 16 | USAGE (additional charge for usage calls)\n6- A78 | Router (Exit charge)\n7- YK | STB (Exit charge)\n8- YL | Wireless Phone (Exit charge)\n9- SM | Tech visit (for wrong additional charges for tech visit)\n10- GO | Wireless Phone (for refund wrong additional charges rental for V Package & Channels)",
 ];
 
 
