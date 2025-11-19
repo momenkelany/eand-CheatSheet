@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { useState, useRef } from "react";
 import { Card } from "./ui/card";
+import Nl2Br from "./ui/nl2br";
 
 interface InfohubCardProps {
   title: string;
@@ -64,10 +65,11 @@ export default function InfohubCard({ title, content }: InfohubCardProps) {
                   {/<a\s+/i.test(item) ? (
                     <span
                       // content is authored internally (knowledge-base). Render HTML so anchors work.
-                      dangerouslySetInnerHTML={{ __html: item }}
+                      // Also allow \n to become <br /> for line breaks.
+                      dangerouslySetInnerHTML={{ __html: item.replace(/\n/g, "<br />") }}
                     />
                   ) : (
-                    item
+                    <Nl2Br>{item}</Nl2Br>
                   )}
                 </li>
               ))}

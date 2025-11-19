@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { useState, useRef } from "react";
 import { Card } from "./ui/card";
+import Nl2Br from "./ui/nl2br";
 
 interface StartupToolsCardProps {
   title: string;
@@ -63,10 +64,10 @@ export default function StartupToolsCard({ title, content }: StartupToolsCardPro
                 <li key={index} className="pl-3">
                   {/<a\s+/i.test(item) ? (
                     <span
-                      dangerouslySetInnerHTML={{ __html: item }}
+                      dangerouslySetInnerHTML={{ __html: item.replace(/\n/g, "<br />") }}
                     />
                   ) : (
-                    item
+                    <Nl2Br>{item}</Nl2Br>
                   )}
                 </li>
               ))}

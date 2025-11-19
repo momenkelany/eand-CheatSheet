@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { useState, useRef } from "react";
 import { Card } from "./ui/card";
+import Nl2Br from "./ui/nl2br";
 
 interface DeviceCareCardProps {
   title: string;
@@ -64,10 +65,11 @@ export default function DeviceCareCard({ title, content }: DeviceCareCardProps) 
                   {/<a\s+/i.test(item) ? (
                     <span
                       // content may include internal links; render HTML so anchors work.
-                      dangerouslySetInnerHTML={{ __html: item }}
+                      // Also replace newlines with <br /> so authors can add `\n` in content.
+                      dangerouslySetInnerHTML={{ __html: item.replace(/\n/g, "<br />") }}
                     />
                   ) : (
-                    item
+                    <Nl2Br>{item}</Nl2Br>
                   )}
                 </li>
               ))}
