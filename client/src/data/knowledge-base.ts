@@ -595,7 +595,12 @@ export const startupTools: StartupTool[] = [
       📋 Quick Checklist <br>
       </a>`
     ]
-  }
+  },
+  {
+    title: "Batch 92❤️ Drive",
+    content: [
+      ` <a href="https://drive.google.com/drive/u/0/folders/1dg86czTKfz_RtQAadPqgu7SM57nJvOWT" target="_blank" >Click Here</a>`    ]
+  },
 ];
 
 export const codesNumbers: string[] = [
