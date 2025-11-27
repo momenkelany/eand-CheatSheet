@@ -288,7 +288,7 @@ export const topics: Topic[] = [
 
    {
     title: "Family Plan - Manage Free Shared Data (Distributed to Shared and Vice Versa)",
-    content: ["Keyword: Wasel", "Family Plan - Manage Free Shared Data (Distributed to Shared and Vice Versa) -: PictureGuideTitle"]
+    content: ["Keyword: free shared", "Family Plan - Manage Free Shared Data (Distributed to Shared and Vice Versa) -: PictureGuideTitle"]
    
   },
 ];
