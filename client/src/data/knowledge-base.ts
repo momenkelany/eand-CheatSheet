@@ -1,57 +1,89 @@
 export const details: string[] = [
-"1- Plan Type : Left-Panel ➡ Product Information ➡ (Plan Name)",
+"1- Plan Type (Active Service / Current Plan) (Name - Benefits - Rental) : Left-Panel ➡ Product Information ➡ (Plan Name)",
 
-"2- Usage Limit : 360 ➡ Customer profile ➡ Usage limit",
+"2- Transferred Credits : Billing ➡ Adjustment and Transfer ➡ Account ➡ UBT Details History",
 
-"3- DCB Limit : 360 ➡ Customer profile ➡ DCB Limit\n(If it appears, so it is activated)\n(ex. App Store / Google Play Purchases)",
+"3- Last Modification or Change requested by the customer : 360 ➡ Recent Payments / Recent Requests\nor\nBilling ➡ Payment Details\nor\nUsage ➡ Credits ➡ Mobile ➡ Main ➡ Mini Statement ➡ All\nor\nUsage ➡ CRS (DWS) ➡ Provisioning Details (Byzhr hna tahwel el rased kman)",
 
-"4- Credit Limit : Profile ➡ Account ➡ Dunning ➡ Credit Limit",
+"4- Registered Contact email Address : Left Panel ➡ Contact Information",
 
-"5- Device Limit : Profile ➡ Party ➡ Current ➡ Device Limit Information",
+"5- Usage Limit : 360 ➡ Customer profile ➡ Usage limit",
 
-"6- Bad Debt / Accounts Expense : Profile ➡ Party ➡ Current ➡ Bad Debit Details",
+"6- Contacted Customer Care : Interaction ➡ Account ➡ Channels",
 
-"7- Document Registration Expiry : Profile ➡ Party ➡ Profile Audit Trail ➡ Registration Expiry",
+"7- Remaining Amount of Benefits / Allowance : 360\nor\nMobile ➡ Network ➡ Allocated Resources",
 
-"8- CRC Notes : Profile ➡ Account ➡ Dunning ➡ CRC Notes (Credit Control Notes)\n(i.e To know the reason of disconnection ex. OutgoingBar (OG) - Toss - Ceased - Home Region",
+"8- Smiles Points Balance : Left Panel ➡ Smiles",
 
-"9- Amount Due : Profile ➡ Account ➡ Dunning ➡ Amount Due as of now\n(i.e Unbilled Rental)",
+"9- DCB Limit : 360 ➡ Customer profile ➡ DCB Limit\n(If it appears, so it is activated)\n(ex. App Store / Google Play Purchases)",
 
-"10- Active Add-ons and Subscriptions (VAS) : Profile ➡ Account ➡ Subscriptions ➡ VAS + Instalments and All the Other Subscriptions",
+"10- Credit Limit : Profile ➡ Account ➡ Dunning ➡ Credit Limit",
 
-"11- View Previous Bills : Billing ➡ Billing and Charges ➡ Searched Account",
+"11- Device Limit : Profile ➡ Party ➡ Current ➡ Device Limit Information",
 
-"12- Future Dated Request : Interaction ➡ Account ➡ Future Dated Request",
+"12- Bad Debt / Accounts Expense : Profile ➡ Party ➡ Current ➡ Bad Debit Details",
 
-"13- Proactive Complaint : Interaction ➡ Account ➡ Proactive Complaint\n(i.e The system created an Proactive Complaint Automatically)\n(ex. when customer has an issue of elife service, to send technician visit for free)",
+"13- Document Registration Expiry : Profile ➡ Party ➡ Profile Audit Trail ➡ Registration Expiry",
 
-"14- Check Installation / Technician Visit / Shifting Appointment Date (Order Followup / Order Status): Interaction ➡ Account ➡ Order ➡ View Sub Orders ➡ View ➡ WFM (Work Force Management)",
+"14- CRC Notes : Profile ➡ Account ➡ Dunning ➡ CRC Notes (Credit Control Notes)\n(i.e To know the reason of disconnection ex. OutgoingBar (OG) - Toss - Ceased - Home Region",
 
-"15- Check elife Installation Address: Interaction ➡ Account ➡ Order ➡ View Sub Orders ➡ View ➡ Installation Address",
+"15- Amount Due : Profile ➡ Account ➡ Dunning ➡ Amount Due as of now\n(i.e Unbilled Rental)",
 
-"16- Check Location Home Ready or Not for Installation : Interaction ➡ Account ➡ Order ➡ View Sub Orders ➡ View ➡ EID Details",
+"16- Active Add-ons and Subscriptions (VAS) : Profile ➡ Account ➡ Subscriptions ➡ VAS + Instalments and All the Other Subscriptions",
 
-"17- Benefits and Remaining of the Plans : Mobile ➡ Network ➡ Allocated Resources ➡ Benefits and remaining of the plan",
+"17- View Previous Bills : Billing ➡ Billing and Charges ➡ Searched Account",
 
-"18- Call Forwarding / Call Waiting Condition: Mobile ➡ Volte ➡ Call forwarding Condition and Call Waiting (active or not)",
+"18- Future Dated Request : Interaction ➡ Account ➡ Future Dated Request",
 
-"19- Local Preferred Number : Mobile ➡ Networks in Details ➡ Friends and Family (Local Preferred Number)",
+"19- Proactive Complaint : Interaction ➡ Account ➡ Proactive Complaint\n(i.e The system created an Proactive Complaint Automatically)\n(ex. when customer has an issue of elife service, to send technician visit for free)",
 
-"20- International Preferred Number : Mobile ➡ Networks in Details ➡ Friends and Family : International / Home Country Code (International Preferred Number)",
+"20- Check Installation / Technician Visit / Shifting Appointment Date (Order Followup / Order Status): Interaction ➡ Account ➡ Order ➡ View Sub Orders ➡ View ➡ WFM (Work Force Management)",
 
-"21- Country Preferred Number : Mobile ➡ Allocated Resources ➡ Country Name ➡ Preferred Number",
+"21- Check elife Installation Address: Interaction ➡ Account ➡ Order ➡ View Sub Orders ➡ View ➡ Installation Address",
 
-"22- Check Roaming Profile Status (Country and Operator) :  Mobile ➡ Network ➡ HLR ➡ Roaming details, \nMulti-Sim (Primary and Secondary), \nCall Forwarding, \nCall Barring (i.e preventing incoming calls), \nSMS Incoming Status, \nMulti Party Service, \nSMS Incoming Status, \nHot-Line (i.e a service that stop incoming calls and directed the calls to customer service because he has unbilled amount)",
+"22- Check Location Home Ready or Not for Installation : Interaction ➡ Account ➡ Order ➡ View Sub Orders ➡ View ➡ EID Details",
 
-"23- Check App Username and Primary number and email: Online ➡ B2C ➡ Personal E-mail, \nUsername (for e& App), \nPrimary Number (of party ID), \nLinked credit cards",
+"23- Benefits and Remaining of the Plans : Mobile ➡ Network ➡ Allocated Resources ➡ Benefits and remaining of the plan",
 
-"24- Post-Paid to Pre-Paid : USP ➡ Account Management ➡ Migration\n(from PostPaid to PrePaid) ➡ Select Produce ➡ Prepaid ➡ Wasel",
+"24- Call Forwarding / Call Waiting Condition: Mobile ➡ Volte ➡ Call forwarding Condition and Call Waiting (active or not)",
 
-"25- Technician Visit (Paid Visit 157.5 AED VAT included) : USP ➡ Edit Account ➡ Technician Visit",
+"25- Local Preferred Number : Mobile ➡ Networks in Details ➡ Friends and Family (Local Preferred Number)",
 
-"26- Additional elife Router : USP ➡ Account Management ➡ Edit Account ➡ Home Zone (in search)",
+"26- International Preferred Number : Mobile ➡ Networks in Details ➡ Friends and Family : International / Home Country Code (International Preferred Number)",
 
-"27- Add / Delete add-ons for e-Life : USP ➡ Account Management ➡ Edit Account ➡ Add / Delete add-ons for e-Life (ex. Sports+ 39)",
+"27- Country Preferred Number : Mobile ➡ Allocated Resources ➡ Country Name ➡ Preferred Number",
+
+"28- Check Roaming Profile Status (Country and Operator) :  Mobile ➡ Network ➡ HLR ➡ Roaming details, \nMulti-Sim (Primary and Secondary), \nCall Forwarding, \nCall Barring (i.e preventing incoming calls), \nSMS Incoming Status, \nMulti Party Service, \nSMS Incoming Status, \nHot-Line (i.e a service that stop incoming calls and directed the calls to customer service because he has unbilled amount)",
+
+"29- Check App Username and Primary number and email: Online ➡ B2C ➡ Personal E-mail, \nUsername (for e& App), \nPrimary Number (of party ID), \nLinked credit cards",
+
+"30- Post-Paid to Pre-Paid : USP ➡ Account Management ➡ Migration\n(from PostPaid to PrePaid) ➡ Select Produce ➡ Prepaid ➡ Wasel",
+
+"31- Technician Visit (Paid Visit 157.5 AED VAT included) : USP ➡ Edit Account ➡ Technician Visit",
+
+"32- Additional elife Router : USP ➡ Account Management ➡ Edit Account ➡ Home Zone (in search)",
+
+"33- Add / Delete add-ons for e-Life : USP ➡ Account Management ➡ Edit Account ➡ Add / Delete add-ons for e-Life (ex. Sports+ 39)",
+
+"34- Check Out of Plan Usage : Billing ➡ Bill Details ➡ Current Month Charges",
+
+"35- Retention Inbound Request (Migration Postpaid to Prepaid) : <a href=\"https://drive.google.com/file/d/1NLs2rZuw0s0OQVoC6EavGTWbOors7dqe/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">Complaint ➡ Billing ➡ Request ➡ Retention Intbound</a>",
+
+"36- Retention Outbound Request (Migration Postpaid to Prepaid) : <a href=\"https://\" target=\"_blank\" rel=\"noopener noreferrer\">Complaint ➡ Billing ➡ Request ➡ Retention Outbound</a>",
+
+"37- Transferred Data : Billing ➡ Adjustment and Transfer ➡ Account ➡ DBT Details History",
+
+"38- Alternate Contact Number : Left Panel ➡ Contact Information",
+
+"39- Customer Segment : Left Panel ➡ Customer Profile",
+
+"40- Customer Segment : Left Panel ➡ Customer Profile",
+
+"41- Requests : Interaction ➡ Account ➡ Requests",
+
+"42- Complaints : Interaction ➡ Account ➡ Complaints",
+
+
 ]
 
 type Topic = { title: string; content: string[] };
@@ -82,17 +114,17 @@ export const topics: Topic[] = [
   },
   {
     title: "Cancel add-on / Third Party Services Subscriptions",
-    content: ["Keyword: cancel any","How to cancel any of your add-ons and Third Party Services subscriptions-; Picture ideTitle"]
+    content: ["Keyword: cancel any","How to cancel any of your add-ons and Third Party Services subscriptions -: Picture ideTitle"]
     
   },
    {
     title: "Check and Analyze Usage (calls, SMS and data)",
-    content: ["Keyword:analyze","How to check and analyze usage (calls, SMS and data)—; PictureGUideTitle"]
+    content: ["Keyword:analyze","How to check and analyze usage (calls, SMS and data) -: PictureGUideTitle"]
   
   },
    {
     title: "Change Usage Limit / Charges",
-    content: ["Keyword:Usage charge","Setting Usage Charges Limit via Mobile app PictureGuideTitle"]
+    content: ["Keyword:Usage charge","Setting Usage Charges Limit via Mobile app -: PictureGuideTitle"]
   
   },
    {
@@ -107,42 +139,42 @@ export const topics: Topic[] = [
   },
    {
     title: "Migrate from Prepaid to Postpaid (eligibility auto check)",
-    content: ["Keyword:migrate","How to Migrate from Prepaid to Postpaid (eligibility auto check) PictureGuideTitIe"]
+    content: ["Keyword:migrate","How to Migrate from Prepaid to Postpaid (eligibility auto check) -: PictureGuideTitIe"]
   
   },
    {
     title: "Migrate from Prepaid to Postpaid (manual upload of documents)",
-    content: ["Keyword:migrate","How to Migrate from Prepaid to Postpaid (manual upload Of documents) PictureGuideT1tle"]
+    content: ["Keyword:migrate","How to Migrate from Prepaid to Postpaid (manual upload Of documents) -: PictureGuideT1tle"]
   
   },
    {
-    title: "Apply for eSlM Replacement with UAE Pass",
+    title: "Apply for eSiM Replacement with UAE Pass",
     content: ["Keyword:esim replace","How to apply for eSlM Replacement with UAE Pass -: PictureGuideTitle"]
   
   },
    {
-    title: "eSlM replacement",
-    content: ["Keyword:esim replacement","How to do Apple watch eSlM replacement through UAE APP With facial recognition PictureGuideTitle"]
+    title: "eSiM replacement for Apple Watch",
+    content: ["Keyword:esim replacement","How to do Apple watch eSlM replacement through UAE APP With facial recognition -: PictureGuideTitle"]
   
   },
   {
-    title: "Transfer Active eSlM from old iPhone to new iPhone",
-    content: ["Keyword:esim from","How to transfer active eSiM from oid 'Phone to new iPhone -: PictureGuideTitle"]
+    title: "Transfer Active esim from old iPhone to new iPhone",
+    content: ["Keyword:esim from","How to transfer active esim from oid 'Phone to new iPhone -: PictureGuideTitle"]
   
   },
    {
     title: "Change Postpaid Plans (Upgrade - Downgrade - Change Flavor - Migrate)",
-    content: ["Keyword:flavor","How to change Postpaid plans (Upgrade%2C Downgrade%2C Change flavor%2C Migrate) PictureGuideTitle"]
+    content: ["Keyword:flavor","How to change Postpaid plans (Upgrade%2C Downgrade%2C Change flavor%2C Migrate) -: PictureGuideTitle"]
   
   },
    {
     title: "Change Preferred Country",
-    content: ["Keyword:preferred c","How to manage preferred Country PictureGuideTitle"]
+    content: ["Keyword:preferred c","How to manage preferred Country -: PictureGuideTitle"]
   
   },
    {
     title: "Change Preferred Number",
-    content: ["Keyword:preferred n","How to manage preferred number included in the plan PictureGuideTitle"]
+    content: ["Keyword:preferred n","How to manage preferred number included in the plan -: PictureGuideTitle"]
   
   },
    {
@@ -158,14 +190,107 @@ export const topics: Topic[] = [
    
    {
     title: "Pay in Advance",
-    content: ["Keyword:advance","How to pay in advance via e& UAE mobile app PictureGuideTitle"]
+    content: ["Keyword:advance","How to pay in advance via e& UAE mobile app -: PictureGuideTitle"]
   
   },
    {
     title: "Check / Update Account Contact Details",
-    content: ["Keyword:update","How to check/update account contact details PictureGuideTitle"]
+    content: ["Keyword:update","How to check/update account contact details -: PictureGuideTitle"]
   
-  }
+  },
+ {
+    title: "How to Enable or Disable Autopay in the e& UAE Mobile App",
+    content: ["Keyword: Autopay In", "How to Enable or Disable Autopay in the UAE Mobile App -: PictureGuideT1tle"]
+   
+  },
+   {
+    title: "Find a store / Store Locator",
+    content: ["Keyword: Locator", "Find a Store/Store Locator -: PictureGuideTitle"]
+   
+  },
+  {
+    title: "How to subscribe to visitor line",
+    content: ["Keyword: Visitor", "How to subscribe to visitor line -: PictureGuideTitle"]
+   
+  },
+  {
+    title: "Free Visitor Line via ICP - SIM activation using Passport",
+    content: ["Keyword: free visitor", "Free Visitor Line via ICP - SIM activation using Passport -: PictureGuideTitle"]
+   
+  },
+  {
+    title: "How to Purchase Visitor line eSlM via e&UAE App using QR Code",
+    content: ["Keyword: purchase visitor", "How to Purchase Visitor Line eSIM Via e&UAE App using QR Code -: PictureGuideTitIe"]
+   
+  },
+  {
+    title: "How to Login using UAE Pass",
+    content: ["Keyword: using UAE", "How to Login using UAE Pass -: PictureGuideTitle"]
+   
+  },
+  {
+    title: "How to pay bill or recharge using Smiles points",
+    content: ["Keyword: pay bill", "How to pay bill or recharge using smiles points -: PictureGuideTitle"]
+   
+  },
+  {
+    title: "Get Multi via My Etisalat UAE mobile app",
+    content: ["Keyword: multi sim", "Get Multi via My Etisalat UAE mobile app -: PictureGuideTitle"]
+   
+  },
+  {
+    title: "Cancel Multi SIM via e& UAE mobile app ",
+    content: ["Keyword: multi sim", "Cancel Multi SIM via e& UAE mobile app -: PictureGuideTitle"]
+   
+  },
+  {
+    title: "Adding Add Ons",
+    content: ["Keyword: adding add", "Adding Add Ons -: PictureGuideTitle"]
+   
+  },
+  {
+    title: "How to check / update account contact details (email / Alternate Number / Password)",
+    content: ["Keyword: update acc", "How to check/update account contact details -: PictureGuideTitle"]
+   
+  },
+  {
+    title: "Activation of Amazon Prime membership via Etisalat",
+    content: ["Keyword: prime", "Activation of Amazon Prime membership via Etisalat -: PictureGuideTitle"]
+   
+  },
+  {
+    title: "How to purchase Wasel new line",
+    content: ["Keyword: Wasel", "HOW to purchase Wasel new Line -: PictureGuideTitle"]
+   
+  },
+  {
+    title: "Delete Wasel Flexi",
+    content: ["Keyword: Not in Device Care", "<a href=\"https://drive.google.com/drive/folders/1zX3dsWFaVd4leSddYAnELQ0qM9luYhT6?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">Care CLICK HERE FOR THE STEPS</a>"]
+   
+  },
+  {
+    title: "Change Wifi Network Details (Name - Passowrd)",
+    content: ["Keyword: Not in Device Care", "<a href=\"https://drive.google.com/drive/folders/1vj_4teLR0cwR-gbKbJ47UltLaHm4Z0SO?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">CLICK HERE FOR THE STEPS</a>"]
+   
+  },
+
+   {
+    title: "How to Pay Postpaid Bill",
+    content: ["Keyword: postpaid bill", "How to pay Postpaid Bill -: PictureGuideTitle"]
+   
+  },
+
+   {
+    title: "How to change 4-digit security PIN",
+    content: ["Keyword: security", "How to change 4-digit security PIN -: PictureGuideTitle"]
+   
+  },
+
+   {
+    title: "Family Plan - Manage Free Shared Data (Distributed to Shared and Vice Versa)",
+    content: ["Keyword: Wasel", "Family Plan - Manage Free Shared Data (Distributed to Shared and Vice Versa) -: PictureGuideTitle"]
+   
+  },
 ];
 
 type Article = { title: string; content: string[] };
@@ -174,6 +299,8 @@ export const articles: Article[] = [
     title: "🔒 Manual Verification",
     content: [
       ` <a href="https://contactcentre.etisalat.corp.ae/main/cc_sections/CompassAnserFlow/AnswerFlowImages/generator/Security%20verification%20questions.html" target="_blank" >Security Verification</a>`
+    , ` <a href="https://drive.google.com/drive/folders/1ELoLNs54zuVsAcIr7mg-9oy7KmmiMj1e?usp=sharing" target="_blank" >Security Verification</a>`
+
     ]
   },
   {
@@ -319,16 +446,16 @@ export const startupTools: StartupTool[] = [
     ]
   },
   {
-    title: "📱 Motive Mobile",
-    content: [
-      ` <a href="https://10.183.207.2/csc" target="_blank" >Motive Mobile</a>`
-    ]
-  },
-  {
     title: "✅ Outbound / Callback Tracker",
     content: [
             ` <a href="https://infohub.etisalat.corp.ae/StaticResources/shell/workspace?appid=ROOT_KB_READER&autologin=ADFS&app=ArticleDetail&d=SKB_PRODUCTION.TENANT2&code=ART-B319DBD86A" target="_blank" >Infohub Article: Callback Request - Consumer Elite and Alternate SMB</a>`
-      , ` <a href="<a https://contactcentre.etisalat.corp.ae/main/cc_sections/CompassAnserFlow/AnswerFlowImages/generator/Call%20Back%20Tracker.xlsb</a>" target="_blank" >Excel Sheet</a>`
+      ,` <a href="https://contactcentre.etisalat.corp.ae/main/cc_sections/CompassAnserFlow/AnswerFlowlmages/generator/Call%20Back%20Tracker.xlsb" target="_blank" >Excel Sheet</a>`
+    ]
+  },
+  {
+    title: "📱 Motive Mobile",
+    content: [
+      ` <a href="https://10.183.207.2/csc" target="_blank" >Motive Mobile</a>`
     ]
   },
   {
@@ -434,7 +561,7 @@ export const startupTools: StartupTool[] = [
     ]
   },
   {
-    title: "⚙️ Adjustment Generator",
+    title: "⚙️ Adjustment Generator (Waiver / Refund)",
     content: [
       ` <a href="https://contactcentre.etisalat.corp.ae/main/cc_sections/CompassAnserFlow/AnswerFlowImages/generator/Adjustment%20Generator.html" target="_blank" >Adjustment Generator</a>`
     ]
@@ -474,10 +601,9 @@ export const startupTools: StartupTool[] = [
 export const codesNumbers: string[] = [
   "AVAYA Survey: 71990",
   "Directory / Daleel (Local): 181 / AED 1.OO (AED 1.05 VAT)",
-  "Business / Not Authorized: 71431",
   "Prestige / Emirati AR (Business / Not Authorized): 71461",
   "Prestige / Emirati EN (Business / Not Authorized): 71462",
-  "CTSC AR/EN: 3154",
+  "CTSC AR/EN (Technical Team / Only Transfer when problem isn't solved from Motive): 3154",
   "Home Move Gold AR: 71037",
   "Home Move Gold EN: 71038",
   "EGS Escalation AR/EN: 12183",
@@ -509,8 +635,8 @@ export const codesNumbers: string[] = [
   "Allowance: *140#",
   "Collection: 023014650",
   "Every Day 1 GB: *101*3030*2#",
-  "Charge Code (Mobile): 1- 45 | Rental / Exit Charge Refunded (for refund rental & exit charge)\n2- ET | Wasel Refunds (for refund rental prepaid only)\n3- 16 | Usage (additional charge for usage calls & data)\n4- C94 | Roaming (for rental and call usage while roaming)\n5- LB | Roaming (for data usage while roaming)\n6- B6 | Third Party (181 calls - Special numbs - Mparking - greetune - All third party)\n7- 94 | sim cards (for sim card rentals and sin replacements)\n8- 47 | Balance Transfer (for balance transfer transaction)",
-  "Charge Code (Fixed): 1- IU | Installation  (when customer have wrong installation fees)\n2- 45 | Rental / Exit charge (for refund rental & exit charge)\n3- 3 | External shifting (for refund wrong additional charges for shifting)\n4- 2 | Internal shifting (for refund wrong additional charges for shifting)\n5- 16 | USAGE (additional charge for usage calls)\n6- A78 | Router (Exit charge)\n7- YK | STB (Exit charge)\n8- YL | Wireless Phone (Exit charge)\n9- SM | Tech visit (for wrong additional charges for tech visit)\n10- GO | Wireless Phone (for refund wrong additional charges rental for V Package & Channels)",
+  "Charge Code (Mobile) (i.e identifies the refund reason): 1- 45 | Rental / Exit Charge Refunded (for refund rental & exit charge)\n2- ET | Wasel Refunds (for refund rental prepaid only)\n3- 16 | Usage (additional charge for usage calls & data)\n4- C94 | Roaming (for rental and call usage while roaming)\n5- LB | Roaming (for data usage while roaming)\n6- B6 | Third Party (181 calls - Special numbs - Mparking - greetune - All third party)\n7- 94 | sim cards (for sim card rentals and sin replacements)\n8- 47 | Balance Transfer (for balance transfer transaction)",
+  "Charge Code (Fixed) (i.e identifies the refund reason): 1- IU | Installation  (when customer have wrong installation fees)\n2- 45 | Rental / Exit charge (for refund rental & exit charge)\n3- 3 | External shifting (for refund wrong additional charges for shifting)\n4- 2 | Internal shifting (for refund wrong additional charges for shifting)\n5- 16 | USAGE (additional charge for usage calls)\n6- A78 | Router (Exit charge)\n7- YK | STB (Exit charge)\n8- YL | Wireless Phone (Exit charge)\n9- SM | Tech visit (for wrong additional charges for tech visit)\n10- GO | Wireless Phone (for refund wrong additional charges rental for V Package & Channels)",
 ];
 
 

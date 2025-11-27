@@ -1,5 +1,5 @@
 import { ChevronDown } from "lucide-react";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Card } from "./ui/card";
 import Nl2Br from "./ui/nl2br";
 
@@ -10,36 +10,31 @@ interface StartupToolsCardProps {
 
 export default function StartupToolsCard({ title, content }: StartupToolsCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const lastTapRef = useRef<number | null>(null);
-
-  const handleClick = () => {
-    const now = Date.now();
-    if (!isExpanded) {
-      setIsExpanded(true);
-      lastTapRef.current = now;
-      return;
-    }
-
-    if (lastTapRef.current && now - lastTapRef.current <= 300) {
-      setIsExpanded(false);
-      lastTapRef.current = null;
-    } else {
-      lastTapRef.current = now;
-    }
-  };
+  const handleClick = () => setIsExpanded((prev) => !prev);
 
   return (
     <Card
-      className={`relative overflow-visible cursor-pointer transition-all duration-300 bg-gradient-to-br from-card to-card/60 border border-chart-5/20 hover:border-chart-5 hover:-translate-y-1 hover:shadow-[0_20px_40px_var(--tw-shadow-color)] hover:shadow-chart-5/10 ${
+      className={`relative overflow-visible transition-all duration-300 bg-gradient-to-br from-card to-card/60 border border-chart-5/20 hover:border-chart-5 hover:-translate-y-1 hover:shadow-[0_20px_40px_var(--tw-shadow-color)] hover:shadow-chart-5/10 ${
         isExpanded ? "border-chart-5" : ""
       }`}
-      onClick={handleClick}
       data-testid={`card-startup-tools-${title.replace(/\s+/g, '-').toLowerCase()}`}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-chart-5/10 to-chart-5/10 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-lg" />
       
       <div className="relative p-4 sm:p-6">
-        <div className="flex items-start justify-between gap-3">
+        <div
+          className="flex items-start justify-between gap-3 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/20 rounded-md"
+          role="button"
+          tabIndex={0}
+          onClick={handleClick}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              handleClick();
+            }
+          }}
+          aria-expanded={isExpanded}
+        >
           <h3 
             className="flex-1 font-semibold text-chart-5 text-base sm:text-lg leading-snug"
             data-testid={`text-startup-tools-title-${title.replace(/\s+/g, '-').toLowerCase()}`}
