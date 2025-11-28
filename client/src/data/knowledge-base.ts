@@ -29,9 +29,9 @@ export const details: string[] = [
 
 "15- Amount Due : Profile ➡ Account ➡ Dunning ➡ Amount Due as of now\n(i.e Unbilled Rental)",
 
-"16- Active Add-ons and Subscriptions (VAS) : Profile ➡ Account ➡ Subscriptions ➡ VAS + Instalments and All the Other Subscriptions",
+"16- Check Third Party : Profile ➡ Chargeable ➡ Third Party services",
 
-"17- View Previous Bills : Billing ➡ Billing and Charges ➡ Searched Account",
+"17- Check Bill Details / View Previous Bills : Billing ➡ Billing and Charges ➡ Searched Account",
 
 "18- Future Dated Request : Interaction ➡ Account ➡ Future Dated Request",
 
@@ -79,11 +79,26 @@ export const details: string[] = [
 
 "40- Customer Segment : Left Panel ➡ Customer Profile",
 
-"41- Requests : Interaction ➡ Account ➡ Requests",
+"41- Check Requests : Interaction ➡ Account ➡ Requests",
 
-"42- Complaints : Interaction ➡ Account ➡ Complaints",
+"42- Check Complaints : Interaction ➡ Account ➡ Complaints",
 
-"43- Lend Me : Usage ➡ Mini Statement ➡ Lend Me",
+"43- Check Leads : Interaction ➡ Account ➡ Leads",
+
+"44- Check When Customer Add or Delete any service, new account and migration : Interaction ➡ Account ➡ Orders",
+
+"45- Check Lend Me : Usage ➡ Mini Statement ➡ Lend Me",
+
+"46- Check Customer Balance : 360\nor\n Mobile ➡ Allocated Resource Details  ",
+
+"47- Active Add-ons and Subscriptions (VAS) : Profile ➡ Account ➡ Subscriptions ➡ VAS + Instalments and All the Other Subscriptions",
+
+"48- Check Mobile VAS ( call forwarding, missed call notification, etc): : Profile ➡ Free ➡ Account ➡ Account Services",
+
+"49- Is there a customer dispute refund in the past 6 months? : Billing ➡ Adjustment and Transfers",
+
+"50- Check Contract Expiry Date : Profile ➡ Account Services ➡ Exit Charge Details",
+
 
 ]
 
