@@ -270,7 +270,7 @@ export const topics: Topic[] = [
    
   },
   {
-    title: "Change Wifi Network Details (Name - Passowrd)",
+    title: "Manage / Change Wifi Network Settings (Name - Password)",
     content: ["Keyword: Not in Device Care", "<a href=\"https://drive.google.com/drive/folders/1vj_4teLR0cwR-gbKbJ47UltLaHm4Z0SO?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">CLICK HERE FOR THE STEPS</a>"]
    
   },
