@@ -266,12 +266,12 @@ export const topics: Topic[] = [
   },
   {
     title: "Delete Wasel Flexi",
-    content: ["Keyword: Not in Device Care", "<a href=\"https://drive.google.com/drive/folders/1zX3dsWFaVd4leSddYAnELQ0qM9luYhT6?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">Care CLICK HERE FOR THE STEPS</a>"]
+    content: ["Keyword: Not in Device Care", "<a href=\"https://drive.google.com/file/d/1K8ClwZS0b-ayqRpiRtrJLlM3ZTRWaDAB/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">Care CLICK HERE FOR THE STEPS</a>"]
    
   },
   {
     title: "Manage / Change Wifi Network Settings (Name - Password)",
-    content: ["Keyword: Not in Device Care", "<a href=\"https://drive.google.com/drive/folders/1vj_4teLR0cwR-gbKbJ47UltLaHm4Z0SO?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">CLICK HERE FOR THE STEPS</a>"]
+    content: ["Keyword: Not in Device Care", "<a href=\"https://drive.google.com/file/d/1JpUdrGG9WC5M7x4ZKzpEG4hqZWKRG7YH/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">CLICK HERE FOR THE STEPS</a>"]
    
   },
 
@@ -376,7 +376,16 @@ export const articles: Article[] = [
 
 type Scenario = { title: string; content: string[] };
 export const scenarios: Scenario[] = [
-  {
+   {
+    title: "📃 Plans Suggestions",
+    content: [
+      "Prepaid : Bwdeh el application",
+      "Postpaid : New Freedom (ala hasb el s3r ele ayzo) ",
+      "e-Life : Ultra Starter",
+      "Home Wireless : ???"
+    ]
+  },
+   {
     title: "🔄 Pay Bill for Bad Debt with Account ID through website",
     content: [
       "Test!!!!",
