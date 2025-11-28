@@ -83,6 +83,7 @@ export const details: string[] = [
 
 "42- Complaints : Interaction ➡ Account ➡ Complaints",
 
+"43- Lend Me : Usage ➡ Mini Statement ➡ Lend Me",
 
 ]
 
@@ -606,8 +607,8 @@ export const startupTools: StartupTool[] = [
 export const codesNumbers: string[] = [
   "AVAYA Survey: 71990",
   "Directory / Daleel (Local): 181 / AED 1.OO (AED 1.05 VAT)",
-  "Prestige / Emirati AR (Business / Not Authorized): 71461",
-  "Prestige / Emirati EN (Business / Not Authorized): 71462",
+  "Prestige / Emirati Citizens AR (Business / Not Authorized): 71461",
+  "Prestige / Emirati Citizens EN (Business / Not Authorized): 71462",
   "CTSC AR/EN (Technical Team / Only Transfer when problem isn't solved from Motive): 3154",
   "Home Move Gold AR: 71037",
   "Home Move Gold EN: 71038",
