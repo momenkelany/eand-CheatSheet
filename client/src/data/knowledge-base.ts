@@ -67,9 +67,9 @@ export const details: string[] = [
 
 "34- Check Out of Plan Usage : Billing ➡ Bill Details ➡ Current Month Charges",
 
-"35- Retention Inbound Request (Migration Postpaid to Prepaid) : <a href=\"https://drive.google.com/file/d/1NLs2rZuw0s0OQVoC6EavGTWbOors7dqe/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">Complaint ➡ Billing ➡ Request ➡ Retention Intbound</a>",
+"35- Retention Inbound Request (Migration Postpaid to Prepaid) : <a href=\"/Retention Inbound Request (Migration Postpaid to Prepaid).jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Complaint ➡ Billing ➡ Request ➡ Retention Intbound\n\nMigration (post to pre) inbound:\n\n1-all benefits will be gone\n\n2-excess amount (yom 5 <500 - yklmna >500)\n\n3-sla 2 hours\n\n4-req id hytb3tlk ashan el call htfsl</a>",
 
-"36- Retention Outbound Request (Migration Postpaid to Prepaid) : <a href=\"https://\" target=\"_blank\" rel=\"noopener noreferrer\">Complaint ➡ Billing ➡ Request ➡ Retention Outbound</a>",
+"36- Retention Outbound Request (Migration Postpaid to Prepaid) : <a href=\"/Retention Outbound Request (Migration Postpaid to Prepaid).jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Complaint ➡ Billing ➡ Request ➡ Retention Outbound\n\nMigration (post to pre) outbound:\n\n1-all benefits will be gone\n\n2-excess amount (yom 5 <500 - yklmna >500)\n\n3-sla 1 hour daf3 - 2 hours t7wel\n\n4-edelo outbound req id</a>",
 
 "37- Transferred Data : Billing ➡ Adjustment and Transfer ➡ Account ➡ DBT Details History",
 
@@ -98,6 +98,8 @@ export const details: string[] = [
 "49- Is there a customer dispute refund in the past 6 months? : Billing ➡ Adjustment and Transfers",
 
 "50- Check Contract Expiry Date : Profile ➡ Account Services ➡ Exit Charge Details",
+
+"51- ID : Billing  ➡ Party  ➡ party Profile",
 
 
 ]
@@ -164,17 +166,32 @@ export const topics: Topic[] = [
   
   },
    {
-    title: "Apply for eSiM Replacement with UAE Pass",
+    title: "Physical SIM Replacement",
+    content: ["Keyword:Physical SIM","Physical SIM Replacement -: PictureGuideTitle"]
+  
+  },
+    {
+    title: "Physical SIM Replacement via e& mobile app with UAE Pass",
+    content: ["Keyword:Physical SIM","Physical SIM Replacement via e& mobile app with UAE Pass -: PictureGuideTitle"]
+  
+  },
+   {
+    title: "Physical SIM Replacement - Faulty SIM (within warranty)",
+    content: ["Keyword:Physical SIM","Physical SIM Replacement - Faulty SIM (within warranty) -: PictureGuideTitle"]
+  
+  },
+   {
+    title: "Apply for eSIM Replacement with UAE Pass",
     content: ["Keyword:esim replace","How to apply for eSlM Replacement with UAE Pass -: PictureGuideTitle"]
   
   },
    {
-    title: "eSiM replacement for Apple Watch",
+    title: "eSIM replacement for Apple Watch",
     content: ["Keyword:esim replacement","How to do Apple watch eSlM replacement through UAE APP With facial recognition -: PictureGuideTitle"]
   
   },
   {
-    title: "Transfer Active esim from old iPhone to new iPhone",
+    title: "Transfer Active eSIM from old iPhone to new iPhone",
     content: ["Keyword:esim from","How to transfer active esim from oid 'Phone to new iPhone -: PictureGuideTitle"]
   
   },
@@ -235,11 +252,6 @@ export const topics: Topic[] = [
    
   },
   {
-    title: "How to Purchase Visitor line eSlM via e&UAE App using QR Code",
-    content: ["Keyword: purchase visitor", "How to Purchase Visitor Line eSIM Via e&UAE App using QR Code -: PictureGuideTitIe"]
-   
-  },
-  {
     title: "How to Login using UAE Pass",
     content: ["Keyword: using UAE", "How to Login using UAE Pass -: PictureGuideTitle"]
    
@@ -267,26 +279,30 @@ export const topics: Topic[] = [
   {
     title: "How to check / update account contact details (email / Alternate Number / Password)",
     content: ["Keyword: update acc", "How to check/update account contact details -: PictureGuideTitle"]
-   
+    
   },
   {
     title: "Activation of Amazon Prime membership via Etisalat",
     content: ["Keyword: prime", "Activation of Amazon Prime membership via Etisalat -: PictureGuideTitle"]
+    
+  },
+  {
+    title: "How to Purchase Visitor line eSlM via e&UAE App using QR Code",
+    content: ["Keyword: purchase visitor", "How to Purchase Visitor Line eSIM Via e&UAE App using QR Code -: PictureGuideTitIe"]
    
   },
   {
     title: "How to purchase Wasel new line",
-    content: ["Keyword: Wasel", "HOW to purchase Wasel new Line -: PictureGuideTitle"]
-   
+    content: ["Keyword: new line", "HOW to purchase Wasel new Line -: PictureGuideTitle"]   
   },
   {
     title: "Delete Wasel Flexi",
-    content: ["Keyword: Not in Device Care", "<a href=\"https://drive.google.com/file/d/1K8ClwZS0b-ayqRpiRtrJLlM3ZTRWaDAB/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">Care CLICK HERE FOR THE STEPS</a>"]
+    content: ["Keyword: Not in Device Care", "<a href=\"/Delete Wasel Flexi.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Care CLICK HERE FOR THE STEPS</a>"]
    
   },
   {
     title: "Manage / Change Wifi Network Settings (Name - Password)",
-    content: ["Keyword: Not in Device Care", "<a href=\"https://drive.google.com/file/d/1JpUdrGG9WC5M7x4ZKzpEG4hqZWKRG7YH/view?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\">CLICK HERE FOR THE STEPS</a>"]
+    content: ["Keyword: Not in Device Care", "<a href=\"/Manage  Change Wifi Network Settings (Name - Password)Manage  Change Wifi Network Settings (Name - Password).pdf\" target=\"_blank\" rel=\"noopener noreferrer\">CLICK HERE FOR THE STEPS</a>"]
    
   },
 
@@ -307,6 +323,11 @@ export const topics: Topic[] = [
     content: ["Keyword: free shared", "Family Plan - Manage Free Shared Data (Distributed to Shared and Vice Versa) -: PictureGuideTitle"]
    
   },
+   {
+    title: "Home Move (Shifting)",
+    content: ["Keyword: home move", "Home Move via Mobile app -: PictureGuideTitle"]
+   
+  },
 ];
 
 type Article = { title: string; content: string[] };
@@ -315,7 +336,7 @@ export const articles: Article[] = [
     title: "🔒 Manual Verification",
     content: [
       ` <a href="https://contactcentre.etisalat.corp.ae/main/cc_sections/CompassAnserFlow/AnswerFlowImages/generator/Security%20verification%20questions.html" target="_blank" >Security Verification</a>`
-    , ` <a href="https://drive.google.com/drive/folders/1ELoLNs54zuVsAcIr7mg-9oy7KmmiMj1e?usp=sharing" target="_blank" >Security Verification</a>`
+    , ` <a href="/Manual Verification.pdf" target="_blank" >Security Verification</a>`
 
     ]
   },
@@ -386,7 +407,18 @@ export const articles: Article[] = [
     content: [
       ` <a href="https://infohub.etisalat.corp.ae/StaticResources/shell/workspace?appid=ROOT_KB_READER&autologin=ADFS&app=ArticleDetail&d=SKB_PRODUCTION.TENANT2&code=ART-Z6IGL6_PR864" target="_blank" >Go Digital</a>`
     ]
+  },
+    {
+    title: "Waiver SLA : 1 Hour",
+    content: [
+    ]
+  },
+    {
+    title: "Abbreviations",
+    content: ["SLA (Service Level Agreement): el wa2t ashan el hoga tt3ml\nPFC (Penalty Free Cancellation):\n-kol el bakat: 5 ayam for wrong information / techniccal issue\n-E-Life: 7 ayam lw Ba2d 12 months/ 14 yom lw 24 months\nCPR (Consumer Protection Regulations):m3lomat el baka / limits and restrections / buisness rules / terms and conditions\nFCR (First Call Resolution): repeated calls percentage\nFCR (First Call Resolution) f el complaints: el complaint awl mara tegi aw la (ex. spam)\nNPS: Rating after the call percentage\nTDRA zy NTRA"
+    ]
   }
+  
 ];
 
 type Scenario = { title: string; content: string[] };
@@ -471,6 +503,12 @@ export const startupTools: StartupTool[] = [
     ]
   },
   {
+    title: "⚙️ Adjustment Generator (Waiver / Refund)",
+    content: [
+      ` <a href="https://contactcentre.etisalat.corp.ae/main/cc_sections/CompassAnserFlow/AnswerFlowImages/generator/Adjustment%20Generator.html" target="_blank" >Adjustment Generator</a>`
+    ]
+  },
+  {
     title: "✅ Outbound / Callback Tracker",
     content: [
             ` <a href="https://infohub.etisalat.corp.ae/StaticResources/shell/workspace?appid=ROOT_KB_READER&autologin=ADFS&app=ArticleDetail&d=SKB_PRODUCTION.TENANT2&code=ART-B319DBD86A" target="_blank" >Infohub Article: Callback Request - Consumer Elite and Alternate SMB</a>`
@@ -489,6 +527,12 @@ export const startupTools: StartupTool[] = [
       ` <a href="https://10.183.207.4/csc/startup.do" target="_blank" >Motive LandLine</a>`
     ]
   },
+  {
+  title: "😁 Smiles Portal",
+  content: [
+    ` <a href="https://smiles-api.etisalat.corp.ae/loyaltyadmin/" target="_blank" >Smiles Portal</a>`
+  ]
+},
   {
     title: "📺 DTV (Packages and Channels)",
     content: [
@@ -513,12 +557,6 @@ export const startupTools: StartupTool[] = [
       ` <a href="https://ssocode.etisalat.corp.ae/code/codeuserLogin.do" target="_blank" >CODE (Login)</a>`
     ]
   },
-    {
-    title: "😁 Smiles Portal",
-    content: [
-      ` <a href="https://smiles-api.etisalat.corp.ae/loyaltyadmin/" target="_blank" >Smiles Portal</a>`
-    ]
-  },
   {
     title: "🎵 Orchestra",
     content: [
@@ -529,6 +567,36 @@ export const startupTools: StartupTool[] = [
     title: "🌐 EBW",
     content: [
       ` <a href="http://ssobas.etisalat.corp.ae/BASSelfCare/menuEBWAccServiceDetailsReadOnly.action" target="_blank" >EBW</a>`
+    ]
+  },
+  {
+    title: "📞 Tawasul",
+    content: [
+      ` <a href="https://tawasul-backend.etisalat.corp.ae/SM9.41/index.do" target="_blank" >Tawasul</a>`
+    ]
+  },
+
+  {
+    title: "💳 IPG",
+    content: [
+      ` <a href="https://ipg.comtrust.ae/Merchant/#/Search" target="_blank" >IPG</a>`
+    ]
+  },
+  {
+    title: "📚 eLearning",
+    content: [
+      ` <a href="https://cc-elearning.etisalat.ae/" target="_blank" >eLearning</a>`
+    ]
+  },
+  {
+    title: "⚡Quick Escalator",
+    content: [
+      ` <a href="https://basher-tech.me/Escaltion.html" target="_blank" >Quick Escalator</a>`    ]
+  },
+  {
+    title: "🤖 Adjust Dispatcher (RPA)",
+    content: [
+      ` <a href="https://rpaorchestrator.etisalat.corp.ae:444/processes/home" target="_blank" >Adjust Dispatcher (RPA)</a>`
     ]
   },
   {
@@ -549,13 +617,7 @@ export const startupTools: StartupTool[] = [
       ` <a href="https://cccsahir.etisalat.corp.ae/Sahir/" target="_blank" >Sahir</a>`
     ]
   },
-  {
-    title: "📞 Tawasul",
-    content: [
-      ` <a href="https://tawasul-backend.etisalat.corp.ae/SM9.41/index.do" target="_blank" >Tawasul</a>`
-    ]
-  },
-  {
+    {
     title: "💳 NGA",
     content: [
       ` <a href="http://10.37.240.78:7001/ngaa/index.html" target="_blank" >NGA</a>`
@@ -567,16 +629,10 @@ export const startupTools: StartupTool[] = [
       ` <a href="https://pt2.etisalat.ae/ocg/" target="_blank" >Weyak</a>`
     ]
   },
-  {
-    title: "💳 IPG",
+   {
+    title: "💸 Waiver Generator",
     content: [
-      ` <a href="https://ipg.comtrust.ae/Merchant/#/Search" target="_blank" >IPG</a>`
-    ]
-  },
-  {
-    title: "📚 eLearning",
-    content: [
-      ` <a href="https://cc-elearning.etisalat.ae/" target="_blank" >eLearning</a>`
+      ` <a href="https://okm.etisalat.corp.ae:8226/library/ETISALAT/AnswerFlowImages/generator/add%20adjusment_frontline.html" target="_blank" >Waiver Generator</a>`
     ]
   },
   {
@@ -584,29 +640,6 @@ export const startupTools: StartupTool[] = [
     content: [
       ` <a href="https://forms.office.com/r/RY2zhF5TKV" target="_blank" >FCR Tracker</a>`
     ]
-  },
-  {
-    title: "⚙️ Adjustment Generator (Waiver / Refund)",
-    content: [
-      ` <a href="https://contactcentre.etisalat.corp.ae/main/cc_sections/CompassAnserFlow/AnswerFlowImages/generator/Adjustment%20Generator.html" target="_blank" >Adjustment Generator</a>`
-    ]
-  },
-  {
-    title: "💸 Waiver Generator",
-    content: [
-      ` <a href="https://okm.etisalat.corp.ae:8226/library/ETISALAT/AnswerFlowImages/generator/add%20adjusment_frontline.html" target="_blank" >Waiver Generator</a>`
-    ]
-  },
-  {
-    title: "🤖 Adjust Dispatcher (RPA)",
-    content: [
-      ` <a href="https://rpaorchestrator.etisalat.corp.ae:444/processes/home" target="_blank" >Adjust Dispatcher (RPA)</a>`
-    ]
-  },
-  {
-    title: "⚡Quick Escalator",
-    content: [
-      ` <a href="https://basher-tech.me/Escaltion.html" target="_blank" >Quick Escalator</a>`    ]
   },
   {
     title: "🛠️ Utility Console",
@@ -630,40 +663,46 @@ export const startupTools: StartupTool[] = [
 
 export const codesNumbers: string[] = [
   "AVAYA Survey: 71990",
-  "Directory / Daleel (Local): 181 / AED 1.OO (AED 1.05 VAT)",
+  "CTSC AR/EN (Technical Team / Only Transfer when problem isn't solved from Motive): 3154",
+  "Cancellation Arabic (bn7wlhom): 3582",
+  "Cancellation English (bn7wlhom): 3583",
+  "Cancellation Helpdesk (Cst Bytsl): 8006665 / Free",
   "Prestige / Emirati Citizens AR (Business / Not Authorized): 71461",
   "Prestige / Emirati Citizens EN (Business / Not Authorized): 71462",
-  "CTSC AR/EN (Technical Team / Only Transfer when problem isn't solved from Motive): 3154",
+  "EGS Escalation AR/EN: 12183",
   "Home Move Gold AR: 71037",
   "Home Move Gold EN: 71038",
-  "EGS Escalation AR/EN: 12183",
-  "Enterprise Customers: 8009111",
-  "SMB: 8005800 / Free",
-  "Huawei Support: 80066600",
   "Main Menu (IVR - AR): 3137",
   "Main Menu (IVR - EN): 3139",
-  "Cancellation Helpdesk: 8006665 / Free",
-  "Cancellation Arabic: 3582",
-  "Cancellation English: 3583",
+  "Re-Open Complain (Answer \"No\"): 1661",
   "Customer Service: 800101",
-  "Fleet Management: 800102",
-  "ED - AR : 3639",
-  "ED - AR : 3640",
-  "e& money: 800-392-5538 / Free",
+  "Roaming Care: 9718002300 / Toll free while roaming (prepaid and postpaid)",
+  "Tel (international): 971800101 / Free",
   "Fleet Team: 800102 / Free",
+  "SMB: 8005800 / Free",
+  "SMB (Intemational): +9718005800\n*145*8005800# (indirect calling) / Toll free while roaming (prepaid and postpaid)",
+  "SMB (Controlled by User ID): 80077333",
+    "SMB (Controlled by User ID) - International: *145*80077333# / Toll free while roaming (prepaid and postpaid)",
+
+  "Enterprise Customers (Local): 8009111 / Free",
+    "Enterprise Customers (International): *145*8009111# (indirect dialing) / Toll free while roaming (prepaxl and postpaid)",
   "e& money: 800-392-5538 / Free",
   "Appointment Centre: 8007622 / All Days from 08:00 AM to 10:00 PM",
-  "Roaming Care: 9718002300 / Toll free while roaming (prepaid and postpaid)",
+  "Collection: 023014650",
+  "Directory / Daleel (Local): 181\n• AED 100 (AED 1 05 including VAT)- charged after CSR answers tor first 60 seconds and after that 0.50 AED (excluding VAT) for every following 30 seconds\n• 181 service charges will be displayed as follows:\nPostpaid Mobile:service charges as VAS or Third Party Services (similar to mParking or Callertunes)\nFixed Line:service charges as One-time charges",
+  "Directory / Daleel (International): +971400444181 (Charges Decided by the operator that customer uses)",
   "Etihad Bureau: 800-287328 / Sunday to Thursday: 08:00 AM to 04:00 PM",
-  "Tel (international): 971800101 / Free",
-  "Re-Open Complain (Answer \"No\"): 1661",
+  "IMC (International Maintenance Centre): 042022244",
+  "Huawei Support: 80066600",
+  "Sharaf DG: 800343434 / 9 AM to 6 PM (Sunday & Saturday Off)",
+  "CNOC: 043717736",
+  "CNOC: 867278",
   "Balance: *121#",
   "Anti-Spam: DNCR 1012",
   "Play On Demand (Start/Stop): *800#",
   "Usage Limit Increase: *122#",
   "Wasel Flexi (6 GB): *101*50#",
   "Allowance: *140#",
-  "Collection: 023014650",
   "Every Day 1 GB: *101*3030*2#",
   "Charge Code (Mobile) (i.e identifies the refund reason): 1- 45 | Rental / Exit Charge Refunded (for refund rental & exit charge)\n2- ET | Wasel Refunds (for refund rental prepaid only)\n3- 16 | Usage (additional charge for usage calls & data)\n4- C94 | Roaming (for rental and call usage while roaming)\n5- LB | Roaming (for data usage while roaming)\n6- B6 | Third Party (181 calls - Special numbs - Mparking - greetune - All third party)\n7- 94 | sim cards (for sim card rentals and sin replacements)\n8- 47 | Balance Transfer (for balance transfer transaction)",
   "Charge Code (Fixed) (i.e identifies the refund reason): 1- IU | Installation  (when customer have wrong installation fees)\n2- 45 | Rental / Exit charge (for refund rental & exit charge)\n3- 3 | External shifting (for refund wrong additional charges for shifting)\n4- 2 | Internal shifting (for refund wrong additional charges for shifting)\n5- 16 | USAGE (additional charge for usage calls)\n6- A78 | Router (Exit charge)\n7- YK | STB (Exit charge)\n8- YL | Wireless Phone (Exit charge)\n9- SM | Tech visit (for wrong additional charges for tech visit)\n10- GO | Wireless Phone (for refund wrong additional charges rental for V Package & Channels)",
