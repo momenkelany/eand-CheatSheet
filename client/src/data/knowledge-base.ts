@@ -67,9 +67,9 @@ export const details: string[] = [
 
 "34- Check Out of Plan Usage : Billing ➡ Bill Details ➡ Current Month Charges",
 
-"35- Retention Inbound Request (Migration Postpaid to Prepaid) : <a href=\"/Retention Inbound Request (Migration Postpaid to Prepaid).jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Complaint ➡ Billing ➡ Request ➡ Retention Intbound\n\nMigration (post to pre) inbound:\n\n1-all benefits will be gone\n\n2-excess amount (yom 5 <500 - yklmna >500)\n\n3-sla 2 hours\n\n4-req id hytb3tlk ashan el call htfsl</a>",
+"35- Retention Inbound Request (Migration Postpaid to Prepaid) : <a href=\"/eand-CheatSheet/Retention%20Inbound%20Request%20%28Migration%20Postpaid%20to%20Prepaid%29.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Complaint ➡ Billing ➡ Request ➡ Retention Intbound\n\nMigration (post to pre) inbound:\n\n1-all benefits will be gone\n\n2-excess amount (yom 5 <500 - yklmna >500)\n\n3-sla 2 hours\n\n4-req id hytb3tlk ashan el call htfsl</a>",
 
-"36- Retention Outbound Request (Migration Postpaid to Prepaid) : <a href=\"/Retention Outbound Request (Migration Postpaid to Prepaid).jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Complaint ➡ Billing ➡ Request ➡ Retention Outbound\n\nMigration (post to pre) outbound:\n\n1-all benefits will be gone\n\n2-excess amount (yom 5 <500 - yklmna >500)\n\n3-sla 1 hour daf3 - 2 hours t7wel\n\n4-edelo outbound req id</a>",
+"36- Retention Outbound Request (Migration Postpaid to Prepaid) : <a href=\"/eand-CheatSheet/Retention%20Outbound%20Request%20%28Migration%20Postpaid%20to%20Prepaid%29.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Complaint ➡ Billing ➡ Request ➡ Retention Outbound\n\nMigration (post to pre) outbound:\n\n1-all benefits will be gone\n\n2-excess amount (yom 5 <500 - yklmna >500)\n\n3-sla 1 hour daf3 - 2 hours t7wel\n\n4-edelo outbound req id</a>",
 
 "37- Transferred Data : Billing ➡ Adjustment and Transfer ➡ Account ➡ DBT Details History",
 
@@ -297,12 +297,12 @@ export const topics: Topic[] = [
   },
   {
     title: "Delete Wasel Flexi",
-    content: ["Keyword: Not in Device Care", "<a href=\"/Delete Wasel Flexi.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Care CLICK HERE FOR THE STEPS</a>"]
+    content: ["Keyword: Not in Device Care", "<a href=\"/eand-CheatSheet/Delete%20Wasel%20Flexi.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">CLICK HERE FOR THE STEPS</a>"]
    
   },
   {
     title: "Manage / Change Wifi Network Settings (Name - Password)",
-    content: ["Keyword: Not in Device Care", "<a href=\"/Manage  Change Wifi Network Settings (Name - Password)Manage  Change Wifi Network Settings (Name - Password).pdf\" target=\"_blank\" rel=\"noopener noreferrer\">CLICK HERE FOR THE STEPS</a>"]
+    content: ["Keyword: Not in Device Care", "<a href=\"/eand-CheatSheet/Manage%20%20Change%20Wifi%20Network%20Settings%20%28Name%20-%20Password%29Manage%20%20Change%20Wifi%20Network%20Settings%20%28Name%20-%20Password%29.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">CLICK HERE FOR THE STEPS</a>"]
    
   },
 
@@ -336,7 +336,7 @@ export const articles: Article[] = [
     title: "🔒 Manual Verification",
     content: [
       ` <a href="https://contactcentre.etisalat.corp.ae/main/cc_sections/CompassAnserFlow/AnswerFlowImages/generator/Security%20verification%20questions.html" target="_blank" >Security Verification</a>`
-    , ` <a href="/Manual Verification.pdf" target="_blank" >Security Verification</a>`
+    , ` <a href="/eand-CheatSheet/Manual%20Verification.pdf" target="_blank" >CLICK HERE FOR THE STEPS</a>`
 
     ]
   },
@@ -682,10 +682,9 @@ export const codesNumbers: string[] = [
   "SMB: 8005800 / Free",
   "SMB (Intemational): +9718005800\n*145*8005800# (indirect calling) / Toll free while roaming (prepaid and postpaid)",
   "SMB (Controlled by User ID): 80077333",
-    "SMB (Controlled by User ID) - International: *145*80077333# / Toll free while roaming (prepaid and postpaid)",
-
+  "SMB (Controlled by User ID) - International: *145*80077333# / Toll free while roaming (prepaid and postpaid)",
   "Enterprise Customers (Local): 8009111 / Free",
-    "Enterprise Customers (International): *145*8009111# (indirect dialing) / Toll free while roaming (prepaxl and postpaid)",
+  "Enterprise Customers (International): *145*8009111# (indirect dialing) / Toll free while roaming (prepaxl and postpaid)",
   "e& money: 800-392-5538 / Free",
   "Appointment Centre: 8007622 / All Days from 08:00 AM to 10:00 PM",
   "Collection: 023014650",
