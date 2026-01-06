@@ -99,7 +99,7 @@ export const details: string[] = [
 
 "50- Check Contract Expiry Date : Profile ➡ Account Services ➡ Exit Charge Details",
 
-"51- ID : Billing  ➡ Party  ➡ party Profile",
+"51- ID : Left Panel -> Documents Registration\nor\nProfile -> Party -> Customer Accounts -> Party Profiles -> View (icon el monitor)",
 
 
 ]
@@ -328,6 +328,12 @@ export const topics: Topic[] = [
     content: ["Keyword: home move", "Home Move via Mobile app -: PictureGuideTitle"]
    
   },
+  {
+    title: " WiFi Password Reset",
+    content: ["Keyword: wifi p", " WiFi Password Reset -: PictureGuideTitle"]
+   
+  },
+ 
 ];
 
 type Article = { title: string; content: string[] };
@@ -676,8 +682,8 @@ export const codesNumbers: string[] = [
   "Main Menu (IVR - EN): 3139",
   "Re-Open Complain (Answer \"No\"): 1661",
   "Customer Service: 800101",
-  "Roaming Care: 9718002300 / Toll free while roaming (prepaid and postpaid)",
   "Tel (international): 971800101 / Free",
+  "Roaming Care: 9718002300 / Toll free while roaming (prepaid and postpaid)",
   "Fleet Team: 800102 / Free",
   "SMB: 8005800 / Free",
   "SMB (Intemational): +9718005800\n*145*8005800# (indirect calling) / Toll free while roaming (prepaid and postpaid)",
@@ -705,6 +711,11 @@ export const codesNumbers: string[] = [
   "Every Day 1 GB: *101*3030*2#",
   "Charge Code (Mobile) (i.e identifies the refund reason): 1- 45 | Rental / Exit Charge Refunded (for refund rental & exit charge)\n2- ET | Wasel Refunds (for refund rental prepaid only)\n3- 16 | Usage (additional charge for usage calls & data)\n4- C94 | Roaming (for rental and call usage while roaming)\n5- LB | Roaming (for data usage while roaming)\n6- B6 | Third Party (181 calls - Special numbs - Mparking - greetune - All third party)\n7- 94 | sim cards (for sim card rentals and sin replacements)\n8- 47 | Balance Transfer (for balance transfer transaction)",
   "Charge Code (Fixed) (i.e identifies the refund reason): 1- IU | Installation  (when customer have wrong installation fees)\n2- 45 | Rental / Exit charge (for refund rental & exit charge)\n3- 3 | External shifting (for refund wrong additional charges for shifting)\n4- 2 | Internal shifting (for refund wrong additional charges for shifting)\n5- 16 | USAGE (additional charge for usage calls)\n6- A78 | Router (Exit charge)\n7- YK | STB (Exit charge)\n8- YL | Wireless Phone (Exit charge)\n9- SM | Tech visit (for wrong additional charges for tech visit)\n10- GO | Wireless Phone (for refund wrong additional charges rental for V Package & Channels)",
+  
+
+  
+ 
+  ""
 ];
 
 
